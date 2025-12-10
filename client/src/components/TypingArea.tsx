@@ -4,12 +4,12 @@ import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 
 export function TypingArea() {
-  const { 
-    words, 
-    status, 
-    currentWordIndex, 
-    startTest, 
-    endTest, 
+  const {
+    words,
+    status,
+    currentWordIndex,
+    startTest,
+    endTest,
     resetTest,
     config,
     correctChars,
@@ -50,17 +50,17 @@ export function TypingArea() {
   // Timer logic for time mode
   useEffect(() => {
     let interval: NodeJS.Timeout;
-    
+
     if (status === 'running' && config.mode === 'time') {
       const storeState = useTestStore.getState();
       const startTime = storeState.startTime;
-      
+
       if (!startTime) return;
 
       interval = setInterval(() => {
         const now = Date.now();
         const elapsed = (now - startTime) / 1000;
-        
+
         // Update stats in real-time
         useTestStore.getState().updateStats();
 
@@ -107,7 +107,7 @@ export function TypingArea() {
     // Handle space to move to next word
     if (val.endsWith(' ')) {
       const typedWord = val.trim();
-      
+
       if (typedWord === '') {
         setInput('');
         return;
@@ -164,7 +164,7 @@ export function TypingArea() {
   const currentWord = words[currentWordIndex] || '';
 
   return (
-    <div 
+    <div
       className="relative w-full max-w-5xl mx-auto font-mono text-2xl md:text-3xl leading-relaxed outline-none"
       onClick={() => {
         setIsFocused(true);
@@ -207,6 +207,7 @@ export function TypingArea() {
               >
                 {word.split('').map((char, cIndex) => {
                   let statusClass = 'text-muted-foreground';
+                  let showCursor = false;
 
                   if (isCurrent) {
                     if (cIndex < input.length) {
@@ -216,6 +217,7 @@ export function TypingArea() {
                           : 'text-destructive';
                     } else if (cIndex === input.length) {
                       statusClass = 'text-muted-foreground bg-primary/20 animate-pulse';
+                      showCursor = true;
                     }
                   } else if (isPast) {
                     statusClass = 'text-foreground/60';
@@ -224,7 +226,7 @@ export function TypingArea() {
                   return (
                     <span key={cIndex} className={cn(statusClass, 'relative')}>
                       {char}
-                      {isCurrent && cIndex === input.length && (
+                      {showCursor && (
                         <motion.span
                           layoutId="cursor"
                           className="absolute -left-[1px] top-0 bottom-0 w-[2px] bg-primary"
@@ -234,6 +236,16 @@ export function TypingArea() {
                     </span>
                   );
                 })}
+                {/* Show cursor at the end if user typed past the word length */}
+                {isCurrent && input.length >= word.length && (
+                  <span className="relative">
+                    <motion.span
+                      layoutId="cursor"
+                      className="absolute -left-[1px] top-0 bottom-0 w-[2px] bg-primary h-8"
+                      transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+                    />
+                  </span>
+                )}
               </div>
             );
           })}
