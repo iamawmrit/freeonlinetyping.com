@@ -1,6 +1,6 @@
 import { useTestStore, TestMode } from '@/lib/store';
 import { cn } from '@/lib/utils';
-import { Clock, Type, Quote, Hash, AlignLeft } from 'lucide-react';
+import { Clock, Type, Quote } from 'lucide-react';
 
 export function ModeSelector() {
   const { config, setMode, setConfig } = useTestStore();
@@ -9,8 +9,6 @@ export function ModeSelector() {
     { id: 'time', label: 'Time', icon: Clock },
     { id: 'words', label: 'Words', icon: Type },
     { id: 'quote', label: 'Quote', icon: Quote },
-    { id: 'zen', label: 'Zen', icon: AlignLeft },
-    { id: 'custom', label: 'Custom', icon: Hash },
   ];
 
   return (
@@ -26,8 +24,8 @@ export function ModeSelector() {
               onClick={() => setMode(mode.id)}
               className={cn(
                 "flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-all duration-200",
-                isActive 
-                  ? "bg-background text-primary shadow-sm" 
+                isActive
+                  ? "bg-background text-primary shadow-sm"
                   : "text-muted-foreground hover:text-foreground hover:bg-background/50"
               )}
             >
@@ -56,7 +54,7 @@ export function ModeSelector() {
             ))}
           </div>
         )}
-        
+
         {config.mode === 'words' && (
           <div className="flex gap-2">
             {[10, 25, 50, 100].map((count) => (

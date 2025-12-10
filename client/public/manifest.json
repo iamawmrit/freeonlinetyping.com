@@ -1,0 +1,16 @@
+{
+  "name": "Rith Typing Pro",
+  "short_name": "Typing Pro",
+  "description": "Test and improve your typing speed with real-time WPM tracking and multiple test modes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#00F0FF",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

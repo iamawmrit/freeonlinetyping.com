@@ -71,7 +71,6 @@ export function ResultModal() {
         setScreenshotUrl(url);
       }
     } catch (error) {
-      console.error('Failed to capture screenshot:', error);
       // Make sure to clean up even if there's an error
       resultRef.current?.classList.remove('screenshot-mode');
       document.getElementById('screenshot-styles')?.remove();
@@ -82,7 +81,7 @@ export function ResultModal() {
     if (!screenshotUrl) return;
 
     const link = document.createElement('a');
-    link.download = `typing-result-${wpm}wpm.png`;
+    link.download = `typing.awmrit.com-${wpm}wpm-${accuracy}acc.png`;
     link.href = screenshotUrl;
     link.click();
   };

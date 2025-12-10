@@ -1,31 +1,21 @@
-import { Github, Twitter, MessageSquare, Shield, FileText, Mail } from 'lucide-react';
+import { Heart } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="w-full py-8 px-4 mt-auto border-t border-border/10 bg-background/50 backdrop-blur-sm">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-muted-foreground font-mono">
-        
-        <div className="flex items-center gap-6">
-          <a href="#" className="flex items-center gap-2 hover:text-primary transition-colors">
-            <Mail className="w-3 h-3" /> Contact
+    <footer className="w-full py-6 px-4 mt-auto border-t border-border/10 bg-background/50 backdrop-blur-sm">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground font-mono">
+
+        <div className="flex items-center gap-2">
+          <span>© {new Date().getFullYear()}</span>
+          <a href="https://awmrit.com" target="_blank" rel="noopener" className="text-primary hover:underline">
+            awmrit
           </a>
+          <span>• Made with</span>
+          <Heart className="w-3 h-3 text-red-500 fill-red-500" />
         </div>
 
-        <div className="flex items-center gap-6">
-          <a href="#" className="flex items-center gap-2 hover:text-foreground transition-colors">
-            <FileText className="w-3 h-3" /> Terms
-          </a>
-          <a href="#" className="flex items-center gap-2 hover:text-foreground transition-colors">
-            <Shield className="w-3 h-3" /> Privacy
-          </a>
-          <a href="#" className="flex items-center gap-2 hover:text-foreground transition-colors">
-            Security
-          </a>
-        </div>
-
-        <div className="flex items-center gap-2 opacity-50 hover:opacity-100 transition-opacity">
-          <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-          <span>Cyber-Zenith v1.0.0</span>
+        <div className="flex items-center">
+          <span>typing.awmrit.com</span>
         </div>
       </div>
     </footer>

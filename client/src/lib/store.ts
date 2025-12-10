@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { generateWords } from './words';
+import { getRandomQuote } from './quotes';
 
 export type TestMode = 'time' | 'words' | 'quote' | 'zen' | 'custom';
 export type TestStatus = 'idle' | 'running' | 'finished';
@@ -24,7 +25,7 @@ interface TestState {
   wpm: number;
   accuracy: number;
   config: TestConfig;
-  
+
   // Actions
   setMode: (mode: TestMode) => void;
   setConfig: (config: Partial<TestConfig>) => void;
@@ -55,9 +56,9 @@ export const useTestStore = create<TestState>((set, get) => ({
     numbers: false,
   },
 
-  setMode: (mode) => set((state) => ({ 
+  setMode: (mode) => set((state) => ({
     config: { ...state.config, mode },
-    status: 'idle' 
+    status: 'idle'
   })),
 
   setConfig: (newConfig) => set((state) => ({
@@ -87,7 +88,7 @@ export const useTestStore = create<TestState>((set, get) => ({
     const { startTime, correctChars, incorrectChars } = get();
     const endTime = Date.now();
     const durationInMinutes = (endTime - (startTime || endTime)) / 60000;
-    
+
     // Standard WPM calculation: (all typed characters / 5) / time in minutes
     // Net WPM usually subtracts errors, but we'll stick to standard gross/net logic later if needed
     // Here we use correct chars for "useful" speed
@@ -105,10 +106,21 @@ export const useTestStore = create<TestState>((set, get) => ({
 
   resetTest: () => {
     const { config } = get();
-    const count = config.mode === 'words' ? config.wordCount : 100;
+    let words: string[];
+
+    if (config.mode === 'quote') {
+      // Get a random quote and split it into words
+      const quote = getRandomQuote();
+      words = quote.split(' ');
+    } else {
+      // Generate random words for other modes
+      const count = config.mode === 'words' ? config.wordCount : 100;
+      words = generateWords(count, config.punctuation, config.numbers);
+    }
+
     set({
       status: 'idle',
-      words: generateWords(count, config.punctuation, config.numbers),
+      words,
       currentWordIndex: 0,
       currentCharIndex: 0,
       correctChars: 0,
@@ -126,7 +138,7 @@ export const useTestStore = create<TestState>((set, get) => ({
 
     const now = Date.now();
     const durationInMinutes = (now - startTime) / 60000;
-    
+
     if (durationInMinutes <= 0) return;
 
     const wpm = Math.round((correctChars / 5) / durationInMinutes);
@@ -139,17 +151,17 @@ export const useTestStore = create<TestState>((set, get) => ({
   handleInput: (char: string) => {
     const state = get();
     if (state.status === 'finished') return;
-    
+
     if (state.status === 'idle') {
       state.startTest();
     }
 
     const currentWord = state.words[state.currentWordIndex];
     const isCorrect = char === currentWord[state.currentCharIndex];
-    
+
     // Logic for advancing cursor and tracking stats
     // This is a simplified version; complex handling (extra chars, etc.) can be added
-    
+
     if (isCorrect) {
       set((s) => ({ correctChars: s.correctChars + 1 }));
     } else {
@@ -171,7 +183,7 @@ export const useTestStore = create<TestState>((set, get) => ({
   handleBackspace: () => {
     const state = get();
     if (state.status === 'finished' || state.currentCharIndex === 0) return;
-    
+
     set((s) => ({ currentCharIndex: s.currentCharIndex - 1 }));
   },
 }));
