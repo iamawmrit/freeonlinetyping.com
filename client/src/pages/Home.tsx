@@ -1,5 +1,5 @@
 import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
+
 import { TypingArea } from '@/components/TypingArea';
 import { KeyboardDisplay } from '@/components/KeyboardDisplay';
 import { ModeSelector } from '@/components/ModeSelector';
@@ -15,10 +15,10 @@ export default function Home() {
     <div className="min-h-screen flex flex-col relative overflow-hidden">
       {/* Background Overlay for Scanlines */}
       <div className="fixed inset-0 pointer-events-none z-50 opacity-10 scanlines" />
-      
+
       <Header />
 
-      <main className="flex-1 flex flex-col items-center justify-center w-full max-w-7xl mx-auto px-4 py-8 relative z-10">
+      <main className="flex-1 flex flex-col items-center justify-center w-full max-w-7xl mx-auto px-4 py-4 relative z-10">
         <div className={cn(
           "flex flex-col items-center w-full transition-all duration-500 ease-out",
           status === 'running' ? "scale-105" : "scale-100"
@@ -48,7 +48,7 @@ export default function Home() {
 
         {/* Footer Instructions */}
         <div className={cn(
-          "mt-16 text-center text-sm text-muted-foreground font-mono transition-opacity duration-300",
+          "mt-6 text-center text-sm text-muted-foreground font-mono transition-opacity duration-300",
           status === 'running' ? "opacity-0" : "opacity-100"
         )}>
           <div className="flex items-center gap-8">
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </main>
 
-      <Footer />
+
       <ResultModal />
     </div>
   );

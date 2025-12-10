@@ -2,10 +2,12 @@ import { useTestStore } from '@/lib/store';
 import { motion, AnimatePresence } from 'framer-motion';
 import { RefreshCw, Share2, Twitter, Camera } from 'lucide-react';
 import confetti from 'canvas-confetti';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
+import html2canvas from 'html2canvas';
 
 export function ResultModal() {
   const { status, wpm, accuracy, resetTest, correctChars, incorrectChars } = useTestStore();
+  const resultRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (status === 'finished') {
@@ -18,6 +20,15 @@ export function ResultModal() {
     }
   }, [status]);
 
+  const handleScreenshot = async () => {
+    if (!resultRef.current) return;
+    const canvas = await html2canvas(resultRef.current, { backgroundColor: '#0a0e1a' });
+    const link = document.createElement('a');
+    link.download = `typing-result-${wpm}wpm.png`;
+    link.href = canvas.toDataURL();
+    link.click();
+  };
+
   if (status !== 'finished') return null;
 
   return (
@@ -29,6 +40,7 @@ export function ResultModal() {
         className="fixed inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-blur-md p-4"
       >
         <motion.div
+          ref={resultRef}
           initial={{ scale: 0.9, opacity: 0, y: 20 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           className="w-full max-w-4xl bg-card border border-border rounded-2xl p-8 shadow-2xl relative overflow-hidden"
@@ -90,7 +102,7 @@ export function ResultModal() {
                 </button>
                 
                 <div className="flex gap-2">
-                  <button className="w-12 h-12 flex items-center justify-center rounded-lg border border-border hover:border-primary/50 hover:bg-muted transition-colors text-muted-foreground hover:text-foreground" title="Screenshot">
+                  <button onClick={handleScreenshot} className="w-12 h-12 flex items-center justify-center rounded-lg border border-border hover:border-primary/50 hover:bg-muted transition-colors text-muted-foreground hover:text-foreground" title="Screenshot">
                     <Camera className="w-5 h-5" />
                   </button>
                 </div>
