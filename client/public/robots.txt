@@ -1,4 +1,18 @@
+# robots.txt for typing.awmrit.com
 User-agent: *
 Allow: /
+Disallow: /api/
 
+# Sitemaps
 Sitemap: https://typing.awmrit.com/sitemap.xml
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
