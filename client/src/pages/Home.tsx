@@ -93,7 +93,7 @@ export default function Home() {
           <article className="bg-card/50 border border-border rounded-xl p-6 text-center">
             <Clock className="w-10 h-10 text-primary mx-auto mb-3" />
             <h2 className="font-bold text-lg mb-2">Multiple Modes</h2>
-            <p className="text-sm text-muted-foreground">Choose from time, word count, quotes, or zen mode tests</p>
+            <p className="text-sm text-muted-foreground">Choose from time, word count, or famous quotes tests</p>
           </article>
           <article className="bg-card/50 border border-border rounded-xl p-6 text-center">
             <Trophy className="w-10 h-10 text-secondary mx-auto mb-3" />
