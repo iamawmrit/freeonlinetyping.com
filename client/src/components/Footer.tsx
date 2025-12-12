@@ -10,8 +10,6 @@ export function Footer() {
           <a href="https://awmrit.com" target="_blank" rel="noopener" className="text-primary hover:underline">
             awmrit
           </a>
-          <span>• Made with</span>
-          <Heart className="w-3 h-3 text-red-500 fill-red-500" />
         </div>
 
         <div className="flex items-center">

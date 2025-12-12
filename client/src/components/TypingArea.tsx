@@ -17,14 +17,29 @@ export function TypingArea() {
   } = useTestStore();
 
   const [input, setInput] = useState('');
-  const [isFocused, setIsFocused] = useState(false);
+  const [isFocused, setIsFocused] = useState(true);
   const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const prevStatusRef = useRef(status);
+
+  // Auto-focus on mount and when reset from finished state
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
+
+  useEffect(() => {
+    if (prevStatusRef.current === 'finished' && status === 'idle') {
+      setInput('');
+      setTimeout(() => inputRef.current?.focus(), 0);
+    }
+    prevStatusRef.current = status;
+  }, [status]);
 
   // Initialize test on component mount and when config changes
   useEffect(() => {
     resetTest();
     setInput('');
+    setTimeout(() => inputRef.current?.focus(), 0);
   }, [config.mode, config.duration, config.wordCount, config.punctuation, config.numbers]);
 
   // Handle Tab key for restart
@@ -47,27 +62,24 @@ export function TypingArea() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-  // Timer logic for time mode
+  // Timer logic and live stats update
   useEffect(() => {
     let interval: NodeJS.Timeout;
 
-    if (status === 'running' && config.mode === 'time') {
-      const storeState = useTestStore.getState();
-      const startTime = storeState.startTime;
-
-      if (!startTime) return;
-
+    if (status === 'running') {
       interval = setInterval(() => {
-        const now = Date.now();
-        const elapsed = (now - startTime) / 1000;
-
-        // Update stats in real-time
         useTestStore.getState().updateStats();
 
-        // End test when time is up
-        if (elapsed >= config.duration) {
-          endTest();
-          clearInterval(interval);
+        // End test when time is up (time mode only)
+        if (config.mode === 'time') {
+          const { startTime } = useTestStore.getState();
+          if (startTime) {
+            const elapsed = (Date.now() - startTime) / 1000;
+            if (elapsed >= config.duration) {
+              endTest();
+              clearInterval(interval);
+            }
+          }
         }
       }, 100);
     }
@@ -116,14 +128,21 @@ export function TypingArea() {
       // Check if word is correct
       const isCorrect = typedWord === currentWord;
 
+      const nextIndex = currentWordIndex + 1;
+
       // Update stats: add space character
       useTestStore.setState(s => ({
-        currentWordIndex: s.currentWordIndex + 1,
+        currentWordIndex: nextIndex,
         correctChars: s.correctChars + (isCorrect ? 1 : 0),
         incorrectChars: s.incorrectChars + (isCorrect ? 0 : 1),
       }));
 
       setInput('');
+
+      // End test if all words completed (words/quote mode)
+      if (nextIndex >= words.length && (config.mode === 'words' || config.mode === 'quote')) {
+        endTest();
+      }
       return;
     }
 
@@ -167,6 +186,10 @@ export function TypingArea() {
     <div
       className="relative w-full max-w-5xl mx-auto font-mono text-2xl md:text-3xl leading-relaxed outline-none"
       onClick={() => {
+        if (status === 'finished') {
+          resetTest();
+          setInput('');
+        }
         setIsFocused(true);
         inputRef.current?.focus();
       }}
@@ -207,7 +230,7 @@ export function TypingArea() {
               >
                 {word.split('').map((char, cIndex) => {
                   let statusClass = 'text-muted-foreground';
-                  let showCursor = false;
+                  const showCursor = isFocused && isCurrent && cIndex === input.length;
 
                   if (isCurrent) {
                     if (cIndex < input.length) {
@@ -215,9 +238,6 @@ export function TypingArea() {
                         input[cIndex] === char
                           ? 'text-foreground'
                           : 'text-destructive';
-                    } else if (cIndex === input.length) {
-                      statusClass = 'text-muted-foreground bg-primary/20 animate-pulse';
-                      showCursor = true;
                     }
                   } else if (isPast) {
                     statusClass = 'text-foreground/60';
@@ -228,8 +248,9 @@ export function TypingArea() {
                       {char}
                       {showCursor && (
                         <motion.span
+                          key="cursor"
                           layoutId="cursor"
-                          className="absolute -left-[1px] top-0 bottom-0 w-[2px] bg-primary"
+                          className="absolute -left-[1px] top-0 bottom-0 w-[2px] bg-primary animate-blink"
                           transition={{ type: 'spring', stiffness: 500, damping: 30 }}
                         />
                       )}
@@ -237,11 +258,12 @@ export function TypingArea() {
                   );
                 })}
                 {/* Show cursor at the end if user typed past the word length */}
-                {isCurrent && input.length >= word.length && (
+                {isFocused && isCurrent && input.length >= word.length && (
                   <span className="relative">
                     <motion.span
+                      key="cursor"
                       layoutId="cursor"
-                      className="absolute -left-[1px] top-0 bottom-0 w-[2px] bg-primary h-8"
+                      className="absolute -left-[1px] top-0 bottom-0 w-[2px] bg-primary h-8 animate-blink"
                       transition={{ type: 'spring', stiffness: 500, damping: 30 }}
                     />
                   </span>
@@ -251,15 +273,6 @@ export function TypingArea() {
           })}
         </div>
       </div>
-
-      {/* Focus overlay - only show if not focused and not running */}
-      {!isFocused && status !== 'finished' && (
-        <div className="absolute inset-0 flex items-center justify-center bg-background/80 backdrop-blur-sm z-20 rounded-lg">
-          <div className="text-primary font-display text-xl animate-pulse">
-            Click to start typing
-          </div>
-        </div>
-      )}
     </div>
   );
 }
