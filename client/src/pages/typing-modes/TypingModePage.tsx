@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { useEffect } from 'react';
 import Home from '../Home';
 
 interface TypingModePageProps {
@@ -25,6 +26,11 @@ export function TypingModePage({
     preset,
 }: TypingModePageProps) {
     const canonicalUrl = `https://freeonlinetyping.com/${slug}`;
+
+    // Scroll to top when component mounts
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>

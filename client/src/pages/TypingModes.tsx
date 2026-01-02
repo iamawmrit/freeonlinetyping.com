@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'wouter';
+import { useEffect } from 'react';
 import { Clock, Target, Zap, Baby, GraduationCap, Briefcase, Smile, Timer } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
@@ -96,6 +97,11 @@ const difficultyColors = {
 };
 
 export default function TypingModes() {
+    // Scroll to top when component mounts
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="min-h-screen bg-background">
             <Helmet>

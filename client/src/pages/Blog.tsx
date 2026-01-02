@@ -55,6 +55,11 @@ export default function Blog() {
     const [selectedCategory, setSelectedCategory] = useState('All');
     const [searchQuery, setSearchQuery] = useState('');
 
+    // Scroll to top when component mounts
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     // Handle category query parameter
     useEffect(() => {
         const params = new URLSearchParams(window.location.search);

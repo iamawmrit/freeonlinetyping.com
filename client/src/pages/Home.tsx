@@ -8,6 +8,7 @@ import { ResultModal } from '@/components/ResultModal';
 import { useTestStore } from '@/lib/store';
 import { cn } from '@/lib/utils';
 import { Zap, Target, Clock, Trophy, CheckCircle } from 'lucide-react';
+import { useEffect } from 'react';
 
 interface HomeProps {
   preset?: {
@@ -18,7 +19,26 @@ interface HomeProps {
 }
 
 export default function Home({ preset }: HomeProps) {
-  const { status } = useTestStore();
+  const { status, setConfig, setMode } = useTestStore();
+
+  // Apply preset configuration when component mounts
+  useEffect(() => {
+    if (preset) {
+      if (preset.mode) {
+        setMode(preset.mode);
+      }
+      const configUpdate: any = {};
+      if (preset.duration !== undefined) {
+        configUpdate.duration = preset.duration;
+      }
+      if (preset.wordCount !== undefined) {
+        configUpdate.wordCount = preset.wordCount;
+      }
+      if (Object.keys(configUpdate).length > 0) {
+        setConfig(configUpdate);
+      }
+    }
+  }, [preset, setMode, setConfig]);
 
   return (
     <div className="min-h-screen flex flex-col relative overflow-hidden">
@@ -35,14 +55,6 @@ export default function Home({ preset }: HomeProps) {
           "flex flex-col items-center w-full transition-all duration-500 ease-out",
           status === 'running' ? "scale-105" : "scale-100"
         )}>
-          {/* Top Controls - Fade out when running */}
-          <div className={cn(
-            "transition-opacity duration-300",
-            status === 'running' ? "opacity-0 pointer-events-none" : "opacity-100"
-          )}>
-            <ModeSelector />
-          </div>
-
           {/* Stats - Always visible but changes mode */}
           <StatsDisplay />
 

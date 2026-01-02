@@ -50,7 +50,7 @@ export const useTestStore = create<TestState>((set, get) => ({
   accuracy: 100,
   config: {
     mode: 'time',
-    duration: 30,
+    duration: 15,
     wordCount: 50,
     punctuation: false,
     numbers: false,
