@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { useEffect } from 'react';
 import Home from '../Home';
 
-interface TypingModePageProps {
+export interface TypingModePageProps {
     title: string;
     description: string;
     keywords: string[];
@@ -74,13 +74,7 @@ export function TypingModePage({
                 </script>
             </Helmet>
 
-            {/* Custom heading for this mode */}
-            <div className="text-center mb-8">
-                <h1 className="text-3xl md:text-4xl font-bold mb-2">{heading}</h1>
-                <p className="text-muted-foreground">{subheading}</p>
-            </div>
-
-            <Home preset={preset} />
+            <Home preset={preset} heading={heading} subheading={subheading} />
         </>
     );
 }

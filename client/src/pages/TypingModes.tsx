@@ -15,6 +15,14 @@ interface TypingMode {
 
 const typingModes: TypingMode[] = [
     {
+        title: '15 Second Typing Test',
+        description: 'Ultra quick typing speed assessment in just 15 seconds',
+        href: '/15-second-typing-test',
+        icon: <Timer className="w-6 h-6" />,
+        duration: '15 sec',
+        difficulty: 'beginner',
+    },
+    {
         title: '1 Minute Typing Test',
         description: 'Quick typing speed assessment in just 60 seconds',
         href: '/1-minute-typing-test',

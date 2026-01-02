@@ -14,6 +14,7 @@ const BlogPost = lazy(() => import("./pages/BlogPost"));
 const TypingModes = lazy(() => import("./pages/TypingModes"));
 
 // Typing mode pages
+import FifteenSecondTest from "./pages/typing-modes/FifteenSecondTest";
 import TenMinuteTest from "./pages/typing-modes/TenMinuteTest";
 import OneMinuteTest from "./pages/typing-modes/OneMinuteTest";
 import FiveMinuteTest from "./pages/typing-modes/FiveMinuteTest";
@@ -43,6 +44,7 @@ function Router() {
         <Route path={"/typing-modes"} component={TypingModes} />
 
         {/* Typing Mode Landing Pages */}
+        <Route path={"/15-second-typing-test"} component={FifteenSecondTest} />
         <Route path={"/10-minute-typing-test"} component={TenMinuteTest} />
         <Route path={"/1-minute-typing-test"} component={OneMinuteTest} />
         <Route path={"/5-minute-typing-test"} component={FiveMinuteTest} />

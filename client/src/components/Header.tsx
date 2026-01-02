@@ -24,25 +24,25 @@ export function Header() {
       <nav aria-label="Main navigation" className="hidden md:flex items-center gap-8">
         <Link
           href="/"
-          className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
         >
           Home
         </Link>
         <Link
           href="/typing-modes"
-          className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
         >
           Typing Modes
         </Link>
         <Link
           href="/blog"
-          className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
         >
           Blog
         </Link>
         <Link
           href="/blog?category=typing-speed"
-          className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
         >
           Guides
         </Link>
@@ -69,28 +69,28 @@ export function Header() {
         >
           <Link
             href="/"
-            className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded transition-colors"
+            className="px-4 py-2 text-base font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded transition-colors"
             onClick={() => setMobileMenuOpen(false)}
           >
             Home
           </Link>
           <Link
             href="/typing-modes"
-            className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded transition-colors"
+            className="px-4 py-2 text-base font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded transition-colors"
             onClick={() => setMobileMenuOpen(false)}
           >
             Typing Modes
           </Link>
           <Link
             href="/blog"
-            className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded transition-colors"
+            className="px-4 py-2 text-base font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded transition-colors"
             onClick={() => setMobileMenuOpen(false)}
           >
             Blog
           </Link>
           <Link
             href="/blog?category=typing-speed"
-            className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded transition-colors"
+            className="px-4 py-2 text-base font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded transition-colors"
             onClick={() => setMobileMenuOpen(false)}
           >
             Guides
