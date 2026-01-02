@@ -116,13 +116,44 @@ export default function TypingModes() {
                 <title>Typing Modes - Choose Your Test | Free Online Typing</title>
                 <meta
                     name="description"
-                    content="Choose from 10+ typing test modes including 1-minute, 5-minute, speed tests, accuracy tests, and more. Find the perfect typing test for your skill level."
+                    content="Choose from 11 typing test modes including 15-second, 1-minute, 5-minute, speed tests, accuracy tests, and more. Find the perfect typing test for your skill level."
                 />
                 <meta
                     name="keywords"
-                    content="typing modes, typing tests, WPM test, typing speed test, accuracy test, beginner typing, professional typing"
+                    content="typing modes, typing tests, WPM test, typing speed test, accuracy test, beginner typing, professional typing, 1 minute test, 5 minute test, 10 minute test"
                 />
                 <link rel="canonical" href="https://freeonlinetyping.com/typing-modes" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Typing Test Modes | Free Online Typing" />
+                <meta property="og:description" content="Choose from 11 typing test modes for different skill levels and goals. Free typing tests with no sign-up required." />
+                <meta property="og:url" content="https://freeonlinetyping.com/typing-modes" />
+                <meta property="og:type" content="website" />
+
+                {/* Structured Data */}
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@type': 'CollectionPage',
+                        name: 'Typing Test Modes',
+                        description: 'Collection of typing test modes for all skill levels',
+                        url: 'https://freeonlinetyping.com/typing-modes',
+                        breadcrumb: {
+                            '@type': 'BreadcrumbList',
+                            itemListElement: [{
+                                '@type': 'ListItem',
+                                position: 1,
+                                name: 'Home',
+                                item: 'https://freeonlinetyping.com'
+                            }, {
+                                '@type': 'ListItem',
+                                position: 2,
+                                name: 'Typing Modes',
+                                item: 'https://freeonlinetyping.com/typing-modes'
+                            }]
+                        }
+                    })}
+                </script>
             </Helmet>
 
             <div className="w-full max-w-7xl mx-auto px-4 py-12">
@@ -218,6 +249,6 @@ export default function TypingModes() {
                     </Link>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }

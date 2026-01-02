@@ -120,6 +120,60 @@ export default function Home({ preset, heading, subheading }: HomeProps) {
           Measure your typing speed in WPM (words per minute) and accuracy with our free typing test. No registration required - start typing now!
         </p>
 
+        {/* Enhanced Structured Data for better SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'HowTo',
+            name: 'How to Test Your Typing Speed',
+            description: 'Learn how to use our free online typing test to measure your WPM and accuracy',
+            totalTime: 'PT1M',
+            tool: [{
+              '@type': 'HowToTool',
+              name: 'Computer or Mobile Device'
+            }, {
+              '@type': 'HowToTool',
+              name: 'Keyboard'
+            }],
+            step: [{
+              '@type': 'HowToStep',
+              position: 1,
+              name: 'Start the Test',
+              text: 'Simply start typing the words displayed on screen. The timer starts automatically with your first keystroke.',
+              url: 'https://freeonlinetyping.com/#step1'
+            }, {
+              '@type': 'HowToStep',
+              position: 2,
+              name: 'Type the Words',
+              text: 'Type each word accurately. Correct mistakes with backspace. The test tracks your speed and accuracy in real-time.',
+              url: 'https://freeonlinetyping.com/#step2'
+            }, {
+              '@type': 'HowToStep',
+              position: 3,
+              name: 'View Your Results',
+              text: 'When time runs out or you complete all words, your WPM speed and accuracy percentage are displayed instantly.',
+              url: 'https://freeonlinetyping.com/#step3'
+            }]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'freeonlinetyping.com',
+            url: 'https://freeonlinetyping.com',
+            logo: 'https://freeonlinetyping.com/favicon.svg',
+            sameAs: [
+              'https://twitter.com/freeonlinetyping'
+            ],
+            contactPoint: {
+              '@type': 'ContactPoint',
+              contactType: 'Customer Service',
+              availableLanguage: 'English'
+            }
+          })}
+        </script>
+
         {/* Quick Stats with improved design */}
         <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-16 text-sm">
           <span className="flex items-center gap-2.5 bg-gradient-to-br from-green-500/10 to-green-500/5 px-5 py-2.5 rounded-full border border-green-500/20 hover:border-green-500/40 transition-colors shadow-sm">
@@ -144,7 +198,7 @@ export default function Home({ preset, heading, subheading }: HomeProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16" role="list" aria-label="Features">
           <article className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border rounded-2xl p-6 text-center hover:shadow-lg hover:border-primary/30 transition-all duration-300 group" role="listitem">
             <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-              <Zap className="w-8 h-8 text-primary" aria-hidden="true" />
+              <Zap className="w-8 h-8 text-primary" aria-hidden="true" aria-label="Real-time tracking icon" />
             </div>
             <h3 className="font-bold text-lg mb-3 group-hover:text-primary transition-colors">Real-time WPM</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">Track your words per minute as you type with instant feedback</p>
@@ -312,13 +366,13 @@ export default function Home({ preset, heading, subheading }: HomeProps) {
           </div>
         </section>
 
-        {/* Additional SEO Content with better styling */}
+        {/* Additional SEO Content with better styling and internal links */}
         <section className="text-center max-w-3xl mx-auto space-y-4">
           <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
             <strong className="text-foreground font-semibold">freeonlinetyping.com</strong> is a free online typing speed test that helps you measure and improve your typing skills. Whether you're a student, professional, or just want to type faster, our typing test provides accurate WPM measurements and detailed statistics.
           </p>
           <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-            Practice with different test modes including timed tests (15s, 30s, 60s), word count tests (10, 25, 50, 100 words), and quote typing. Track your progress and become a faster, more accurate typist today!
+            Practice with different <a href="/typing-modes" className="text-primary hover:underline font-medium">test modes</a> including timed tests (<a href="/15-second-typing-test" className="text-primary hover:underline">15s</a>, <a href="/1-minute-typing-test" className="text-primary hover:underline">1min</a>, <a href="/5-minute-typing-test" className="text-primary hover:underline">5min</a>, <a href="/10-minute-typing-test" className="text-primary hover:underline">10min</a>), word count tests, and quote typing. Check out our <a href="/blog" className="text-primary hover:underline font-medium">typing blog</a> for tips and <a href="/blog?category=typing-speed" className="text-primary hover:underline font-medium">guides</a> to improve faster. Track your progress and become a faster, more accurate typist today!
           </p>
         </section>
       </section>
