@@ -1,0 +1,19 @@
+{
+    "id": "future-of-keyboards",
+    "slug": "future-of-typing-technology",
+    "title": "The Future of Keyboards: Laser, Virtual, and Neural Interfaces",
+    "description": "Will we still use physical keyboards in 10 years? Exploring the cutting edge of text input technology.",
+    "author": "Free Online Typing Team",
+    "publishDate": "2026-01-17T10:00:00Z",
+    "lastModified": "2026-01-17T10:00:00Z",
+    "category": "Technology",
+    "keywords": [
+        "future tech",
+        "virtual keyboard",
+        "neural link",
+        "voice dictation"
+    ],
+    "ogImage": "https://images.unsplash.com/photo-1595044426077-d36d9236d54a?w=1200&h=630&fit=crop",
+    "readingTime": 6,
+    "content": "<h2>Projection Keyboards</h2><p>Cool sci-fi factor, but terrible tactile feedback. Unlikely to replace physical keys.</p><h2>Voice Dictation</h2><p>Getting better every year, but lacks privacy and precision for code/editing.</p><h2>Direct Neural Interface</h2><p>The holy grail. Thinking the words and having them appear. Still in early research phases.</p>"
+}

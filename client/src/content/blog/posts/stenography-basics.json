@@ -1,0 +1,19 @@
+{
+    "id": "stenography-basics",
+    "slug": "introduction-to-stenography",
+    "title": "What is Stenography? Typing at 200+ WPM",
+    "description": "Ever wondered how court reporters type so fast? An introduction to stenography and how you can learn it with a regular keyboard.",
+    "author": "Free Online Typing Team",
+    "publishDate": "2026-01-14T11:00:00Z",
+    "lastModified": "2026-01-14T11:00:00Z",
+    "category": "Advanced Typing",
+    "keywords": [
+        "stenography",
+        "steno",
+        "plover",
+        "court reporting"
+    ],
+    "ogImage": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200&h=630&fit=crop&crop=center",
+    "readingTime": 6,
+    "content": "<h2>Chording</h2><p>Unlike regular typing, steno involves pressing multiple keys simultaneously (chords) to output syllables or whole words.</p><h2>Plover</h2><p>Plover is free open-source software that lets you use a standard keyboard (with N-key rollover) to learn steno. It's a steep learning curve but offers the highest potential typing speeds.</p>"
+}

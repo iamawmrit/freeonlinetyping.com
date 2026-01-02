@@ -29,6 +29,12 @@ export function Header() {
           Home
         </Link>
         <Link
+          href="/typing-modes"
+          className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+        >
+          Typing Modes
+        </Link>
+        <Link
           href="/blog"
           className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
         >
@@ -67,6 +73,13 @@ export function Header() {
             onClick={() => setMobileMenuOpen(false)}
           >
             Home
+          </Link>
+          <Link
+            href="/typing-modes"
+            className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Typing Modes
           </Link>
           <Link
             href="/blog"

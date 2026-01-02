@@ -9,7 +9,15 @@ import { useTestStore } from '@/lib/store';
 import { cn } from '@/lib/utils';
 import { Zap, Target, Clock, Trophy, CheckCircle } from 'lucide-react';
 
-export default function Home() {
+interface HomeProps {
+  preset?: {
+    mode?: 'time' | 'words' | 'quote';
+    duration?: number;
+    wordCount?: number;
+  };
+}
+
+export default function Home({ preset }: HomeProps) {
   const { status } = useTestStore();
 
   return (
