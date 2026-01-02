@@ -215,7 +215,7 @@ export default function Home() {
                 Is this typing test free?
                 <span className="text-primary group-open:rotate-180 transition-transform">▼</span>
               </summary>
-              <p className="mt-3 text-sm text-muted-foreground">Yes! This typing test at typing.awmrit.com is completely free with no sign-up or registration required. You can practice as much as you want and track your improvement over time.</p>
+              <p className="mt-3 text-sm text-muted-foreground">Yes! This typing test at freeonlinetyping.com is completely free with no sign-up or registration required. You can practice as much as you want and track your improvement over time.</p>
             </details>
             <details className="bg-card/30 border border-border rounded-lg p-4 group">
               <summary className="font-bold cursor-pointer list-none flex justify-between items-center">
@@ -237,7 +237,7 @@ export default function Home() {
         {/* Additional SEO Content */}
         <section className="text-center text-sm text-muted-foreground max-w-3xl mx-auto">
           <p className="mb-4">
-            <strong className="text-foreground">typing.awmrit.com</strong> is a free online typing speed test that helps you measure and improve your typing skills. Whether you're a student, professional, or just want to type faster, our typing test provides accurate WPM measurements and detailed statistics.
+            <strong className="text-foreground">freeonlinetyping.com</strong> is a free online typing speed test that helps you measure and improve your typing skills. Whether you're a student, professional, or just want to type faster, our typing test provides accurate WPM measurements and detailed statistics.
           </p>
           <p>
             Practice with different test modes including timed tests (15s, 30s, 60s), word count tests (10, 25, 50, 100 words), and quote typing. Track your progress and become a faster, more accurate typist today!

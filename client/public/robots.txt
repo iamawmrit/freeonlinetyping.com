@@ -1,10 +1,10 @@
-# robots.txt for typing.awmrit.com
+# robots.txt for freeonlinetyping.com
 User-agent: *
 Allow: /
 Disallow: /api/
 
 # Sitemaps
-Sitemap: https://typing.awmrit.com/sitemap.xml
+Sitemap: https://freeonlinetyping.com/sitemap.xml
 
 # Crawl-delay (optional, be nice to servers)
 Crawl-delay: 1

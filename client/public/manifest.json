@@ -1,5 +1,5 @@
 {
-  "name": "Free Typing Test - typing.awmrit.com",
+  "name": "Free Typing Test - freeonlinetyping.com",
   "short_name": "Typing Test",
   "description": "Free online typing test to check your typing speed (WPM) and accuracy. No sign-up required.",
   "start_url": "/",
@@ -9,7 +9,11 @@
   "theme_color": "#00F0FF",
   "orientation": "any",
   "lang": "en",
-  "categories": ["education", "utilities", "productivity"],
+  "categories": [
+    "education",
+    "utilities",
+    "productivity"
+  ],
   "icons": [
     {
       "src": "/favicon.svg",

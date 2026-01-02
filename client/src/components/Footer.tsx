@@ -7,13 +7,14 @@ export function Footer() {
 
         <div className="flex items-center gap-2">
           <span>© {new Date().getFullYear()}</span>
+          <span>Powered by</span>
           <a href="https://awmrit.com" target="_blank" rel="noopener" className="text-primary hover:underline">
-            awmrit
+            awmrit.com
           </a>
         </div>
 
         <div className="flex items-center">
-          <span>typing.awmrit.com</span>
+          <span>freeonlinetyping.com</span>
         </div>
       </div>
     </footer>

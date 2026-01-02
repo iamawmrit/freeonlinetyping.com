@@ -81,7 +81,7 @@ export function ResultModal() {
     if (!screenshotUrl) return;
 
     const link = document.createElement('a');
-    link.download = `typing.awmrit.com-${wpm}wpm-${accuracy}acc.png`;
+    link.download = `freeonlinetyping-${wpm}wpm-${accuracy}acc.png`;
     link.href = screenshotUrl;
     link.click();
   };

@@ -21,7 +21,7 @@ console.log('%c' + `
 ╚═╝  ╚═╝╚═╝   ╚═╝   ╚═╝  ╚═╝       ╚═╝      ╚═╝   ╚═╝     ╚═╝╚═╝  ╚═══╝ ╚═════╝ 
 `, styles.art);
 
-console.log('%c⚡ Welcome to RITH Typing Pro! ⚡', styles.title);
+console.log('%c⚡ Welcome to Free Online Typing! ⚡', styles.title);
 console.log('%c━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', styles.accent);
 console.log('%c✨ Hey there, developer! ✨', styles.subtitle);
 console.log('%c', 'font-size: 2px;'); // spacing
@@ -33,10 +33,9 @@ console.log('%cThe average typing speed is %c40 WPM%c.', styles.text, styles.acc
 console.log('%cProgrammers average around %c60-70 WPM%c.', styles.text, styles.accent, styles.text);
 console.log('%cTop typists can exceed %c150 WPM%c! 💨', styles.text, styles.accent, styles.text);
 console.log('%c', 'font-size: 2px;');
-console.log('%c📫 Get in touch:', styles.subtitle);
-console.log('%c🌐 Website: %chttps://awmrit.com', styles.text, styles.link);
+console.log('%c🌐 Visit: %chttps://freeonlinetyping.com', styles.text, styles.link);
 console.log('%c', 'font-size: 2px;');
-console.log('%c Made by awmrit', styles.text);
+console.log('%c💻 Created by awmrit | %chttps://awmrit.com', styles.text, styles.link);
 console.log('%c', 'font-size: 2px;');
 console.log('%c💬 Psst... Want to collaborate or have feedback? Reach out! 🤝', styles.subtitle);
 
