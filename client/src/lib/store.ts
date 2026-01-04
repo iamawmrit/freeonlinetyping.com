@@ -16,6 +16,7 @@ interface TestConfig {
 interface TestState {
   status: TestStatus;
   words: string[];
+  customWords: string[]; // Store custom words for reuse
   currentWordIndex: number;
   currentCharIndex: number;
   correctChars: number;
@@ -41,6 +42,7 @@ interface TestState {
 export const useTestStore = create<TestState>((set, get) => ({
   status: 'idle',
   words: [],
+  customWords: [],
   currentWordIndex: 0,
   currentCharIndex: 0,
   correctChars: 0,
@@ -67,8 +69,9 @@ export const useTestStore = create<TestState>((set, get) => ({
     status: 'idle'
   })),
 
-  setWords: (words) => set({
+  setWords: (words) => set((state) => ({
     words,
+    customWords: state.config.mode === 'custom' ? words : state.customWords,
     status: 'idle',
     currentWordIndex: 0,
     currentCharIndex: 0,
@@ -78,7 +81,7 @@ export const useTestStore = create<TestState>((set, get) => ({
     endTime: null,
     wpm: 0,
     accuracy: 100,
-  }),
+  })),
 
   startTest: () => {
     const { config, status } = get();
@@ -119,10 +122,13 @@ export const useTestStore = create<TestState>((set, get) => ({
   },
 
   resetTest: () => {
-    const { config } = get();
+    const { config, customWords } = get();
     let words: string[];
 
-    if (config.mode === 'quote') {
+    if (config.mode === 'custom' && customWords.length > 0) {
+      // Reuse stored custom words
+      words = customWords;
+    } else if (config.mode === 'quote') {
       // Get a random quote and split it into words
       const quote = getRandomQuote();
       words = quote.split(' ');

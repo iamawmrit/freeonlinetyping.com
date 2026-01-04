@@ -16,6 +16,13 @@ interface TypingMode {
 
 const typingModes: TypingMode[] = [
     {
+        title: 'Custom Text Typing Practice',
+        description: 'Practice typing with your own custom text and paragraphs',
+        href: '/custom-text-typing-test',
+        icon: <FileText className="w-6 h-6" />,
+        difficulty: 'intermediate',
+    },
+    {
         title: '15 Second Typing Test',
         description: 'Ultra quick typing speed assessment in just 15 seconds',
         href: '/15-second-typing-test',
@@ -95,13 +102,6 @@ const typingModes: TypingMode[] = [
         href: '/typing-test-for-kids',
         icon: <Baby className="w-6 h-6" />,
         difficulty: 'beginner',
-    },
-    {
-        title: 'Custom Text Typing Practice',
-        description: 'Practice typing with your own custom text and paragraphs',
-        href: '/custom-text-typing-test',
-        icon: <FileText className="w-6 h-6" />,
-        difficulty: 'intermediate',
     },
 ];
 

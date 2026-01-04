@@ -14,7 +14,7 @@ import { ResultModal } from '@/components/ResultModal';
 export default function CustomTextTypingTest() {
     const [customText, setCustomText] = useState('');
     const [isTestActive, setIsTestActive] = useState(false);
-    const { resetTest, setWords, status } = useTestStore();
+    const { resetTest, setWords, status, setConfig } = useTestStore();
 
     const handleStartTest = () => {
         if (customText.trim().length < 10) {
@@ -22,8 +22,9 @@ export default function CustomTextTypingTest() {
             return;
         }
 
-        // Convert custom text to words array
+        // Set mode to custom and convert text to words array
         const wordsArray = customText.trim().split(/\s+/);
+        setConfig({ mode: 'custom' });
         setWords(wordsArray);
         setIsTestActive(true);
     };
