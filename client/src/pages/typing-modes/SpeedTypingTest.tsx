@@ -11,6 +11,9 @@ export default function SpeedTypingTest() {
                 'competitive typing',
                 'typing speed challenge',
                 'high WPM test',
+                'typing speed test wpm',
+                'free typing speed test',
+                'check typing speed',
             ]}
             slug="speed-typing-test"
             heading="Speed Typing Test"

@@ -1,4 +1,5 @@
 import { Header } from '@/components/Header';
+import { Helmet } from 'react-helmet-async';
 import { Footer } from '@/components/Footer';
 import { TypingArea } from '@/components/TypingArea';
 import { KeyboardDisplay } from '@/components/KeyboardDisplay';
@@ -44,6 +45,12 @@ export default function Home({ preset, heading, subheading }: HomeProps) {
 
   return (
     <div className="min-h-screen flex flex-col relative overflow-hidden">
+      <Helmet>
+        <title>Free Typing Test - Check Your WPM Speed | freeonlinetyping.com</title>
+        <meta name="description" content="Free online typing test to check your typing speed (WPM) and accuracy. Multiple test modes (1 min, 5 min), real-time stats, no sign-up required. Start improving your typing skills today!" />
+        <link rel="canonical" href="https://freeonlinetyping.com/" />
+      </Helmet>
+
       {/* Background Overlay for Scanlines */}
       <div className="fixed inset-0 pointer-events-none z-50 opacity-10 scanlines" aria-hidden="true" />
 
@@ -114,7 +121,7 @@ export default function Home({ preset, heading, subheading }: HomeProps) {
 
         {/* Visible H2 for SEO with gradient */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-center mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-          Test Your Typing Speed Online
+          Test Your Typing Speed & WPM Online
         </h2>
         <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-12 text-base md:text-lg leading-relaxed">
           Measure your typing speed in WPM (words per minute) and accuracy with our free typing test. No registration required - start typing now!
@@ -330,7 +337,7 @@ export default function Home({ preset, heading, subheading }: HomeProps) {
           <div className="space-y-4 max-w-3xl mx-auto">
             <details className="bg-gradient-to-br from-card/50 to-card/30 backdrop-blur-sm border border-border rounded-xl p-5 group hover:border-primary/30 transition-all">
               <summary className="font-bold cursor-pointer list-none flex justify-between items-center text-base">
-                <span>What is a good typing speed?</span>
+                <span>What is a good WPM typing speed?</span>
                 <span className="text-primary group-open:rotate-180 transition-transform text-xl">▼</span>
               </summary>
               <p className="mt-4 text-sm text-muted-foreground leading-relaxed">The average typing speed is around 40 WPM (words per minute). A speed of 60-80 WPM is considered good and suitable for most professional jobs. Speeds above 80 WPM are excellent, and professional typists often exceed 100 WPM.</p>

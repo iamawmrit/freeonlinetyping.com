@@ -11,6 +11,9 @@ export default function OneMinuteTypingTest() {
                 '1 min WPM test',
                 'fast typing test',
                 'typing speed 1 minute',
+                'wpm test 1 minute',
+                'words per minute test 1 minute',
+                'free typing test 1 minute',
             ]}
             slug="1-minute-typing-test"
             heading="1 Minute Typing Test"

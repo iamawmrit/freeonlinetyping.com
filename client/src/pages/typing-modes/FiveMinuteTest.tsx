@@ -11,6 +11,8 @@ export default function FiveMinuteTypingTest() {
                 'standard typing test',
                 '5 min WPM test',
                 'typing assessment',
+                'wpm test 5 minutes',
+                'free typing test 5 minutes',
             ]}
             slug="5-minute-typing-test"
             heading="5 Minute Typing Test"
