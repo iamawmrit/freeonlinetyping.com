@@ -96,6 +96,13 @@ const typingModes: TypingMode[] = [
         icon: <Baby className="w-6 h-6" />,
         difficulty: 'beginner',
     },
+    {
+        title: 'Custom Text Typing Practice',
+        description: 'Practice typing with your own custom text and paragraphs',
+        href: '/custom-text-typing-test',
+        icon: <FileText className="w-6 h-6" />,
+        difficulty: 'intermediate',
+    },
 ];
 
 const difficultyColors = {

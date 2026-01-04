@@ -29,6 +29,7 @@ interface TestState {
   // Actions
   setMode: (mode: TestMode) => void;
   setConfig: (config: Partial<TestConfig>) => void;
+  setWords: (words: string[]) => void;
   startTest: () => void;
   endTest: () => void;
   resetTest: () => void;
@@ -65,6 +66,19 @@ export const useTestStore = create<TestState>((set, get) => ({
     config: { ...state.config, ...newConfig },
     status: 'idle'
   })),
+
+  setWords: (words) => set({
+    words,
+    status: 'idle',
+    currentWordIndex: 0,
+    currentCharIndex: 0,
+    correctChars: 0,
+    incorrectChars: 0,
+    startTime: null,
+    endTime: null,
+    wpm: 0,
+    accuracy: 100,
+  }),
 
   startTest: () => {
     const { config, status } = get();

@@ -25,6 +25,7 @@ import BeginnerTest from "./pages/typing-modes/BeginnerTest";
 import AdvancedTest from "./pages/typing-modes/AdvancedTest";
 import ProfessionalTest from "./pages/typing-modes/ProfessionalTest";
 import KidsTest from "./pages/typing-modes/KidsTest";
+import CustomTextTest from "./pages/typing-modes/CustomTextTest";
 
 function Router() {
   return (
@@ -34,7 +35,7 @@ function Router() {
       </div>
     }>
       <Switch>
-        <Route path={"/"} component={Home} />
+        <Route path={"/"} component={() => <Home />} />
 
         {/* Blog Routes */}
         <Route path={"/blog"} component={Blog} />
@@ -55,6 +56,7 @@ function Router() {
         <Route path={"/advanced-typing-test"} component={AdvancedTest} />
         <Route path={"/professional-typing-test"} component={ProfessionalTest} />
         <Route path={"/typing-test-for-kids"} component={KidsTest} />
+        <Route path={"/custom-text-typing-test"} component={CustomTextTest} />
 
         <Route path={"/404"} component={NotFound} />
         {/* Final fallback route */}
