@@ -6,6 +6,7 @@ import { KeyboardDisplay } from '@/components/KeyboardDisplay';
 import { ModeSelector } from '@/components/ModeSelector';
 import { StatsDisplay } from '@/components/StatsDisplay';
 import { ResultModal } from '@/components/ResultModal';
+import { SponsorCard } from '@/components/SponsorCard';
 import { useTestStore } from '@/lib/store';
 import { cn } from '@/lib/utils';
 import { Zap, Target, Clock, Trophy, CheckCircle } from 'lucide-react';
@@ -63,6 +64,11 @@ export default function Home({ preset, heading, subheading }: HomeProps) {
           </p>
         </div>
       )}
+
+      {/* Sponsor Card - Fixed position on left side for large screens */}
+      <div className="hidden xl:block fixed left-6 top-24 w-40 z-20">
+        <SponsorCard />
+      </div>
 
       <main className="flex-1 flex flex-col items-center justify-center w-full max-w-7xl mx-auto px-4 py-8 md:py-12 relative z-10" role="main">
         {/* H1 always present for SEO but visually hidden when not needed */}
