@@ -139,8 +139,8 @@ export function TypingArea() {
 
       setInput('');
 
-      // End test if all words completed (words/quote mode)
-      if (nextIndex >= words.length && (config.mode === 'words' || config.mode === 'quote')) {
+      // End test if all words completed (words/quote/custom mode)
+      if (nextIndex >= words.length && (config.mode === 'words' || config.mode === 'quote' || config.mode === 'custom')) {
         endTest();
       }
       return;
