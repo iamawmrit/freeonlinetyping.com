@@ -1,19 +1,20 @@
 {
-    "id": "nail-length-typing",
-    "slug": "long-nails-and-typing",
-    "title": "Can You Type Fast with Long Nails? Tips and Tricks",
-    "description": "Long nails don't have to ruin your WPM. Learn how to adapt your typing style for a fresh manicure.",
-    "author": "Free Online Typing Team",
-    "publishDate": "2026-01-28T15:00:00Z",
-    "lastModified": "2026-01-28T15:00:00Z",
-    "category": "Lifestyle",
-    "keywords": [
-        "nails",
-        "manicure",
-        "typing tips",
-        "flat finger"
-    ],
-    "ogImage": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1200&h=630&fit=crop&crop=center",
-    "readingTime": 4,
-    "content": "<h2>The Flat Finger Technique</h2><p>Instead of using the tips of your fingers (which hits the nail), flatten your fingers slightly to use the pad.</p><h2>Keycap Profile</h2><p>Flat keycaps (like XDA or DSA profile) are often easier for long nails than sculpted ones (like Cherry or OEM).</p>"
+  "id": "nail-length-typing",
+  "slug": "long-nails-and-typing",
+  "title": "Can You Type Fast with Long Nails? Tips and Tricks",
+  "description": "Long nails don't have to ruin your WPM. Learn how to adapt your typing style for a fresh manicure.",
+  "author": "Free Online Typing Team",
+  "publishDate": "2026-01-28T15:00:00Z",
+  "lastModified": "2026-01-28T15:00:00Z",
+  "category": "Lifestyle",
+  "keywords": [
+    "nails",
+    "manicure",
+    "typing tips",
+    "flat finger"
+  ],
+  "ogImage": "/images/blog/nail-length-typing.png",
+  "readingTime": 4,
+  "content": "<h2>The Flat Finger Technique</h2><p>Instead of using the tips of your fingers (which hits the nail), flatten your fingers slightly to use the pad.</p><h2>Keycap Profile</h2><p>Flat keycaps (like XDA or DSA profile) are often easier for long nails than sculpted ones (like Cherry or OEM).</p>",
+  "heroImage": "/images/blog/nail-length-typing.png"
 }

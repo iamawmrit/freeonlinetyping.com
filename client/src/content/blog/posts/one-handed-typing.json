@@ -1,19 +1,20 @@
 {
-    "id": "one-handed-typing",
-    "slug": "guide-to-one-handed-typing",
-    "title": "Mastering One-Handed Typing: Techniques and Layouts",
-    "description": "Whether for accessibility or multitasking, one-handed typing is a useful skill. Learn about half-QWERTY and other layouts.",
-    "author": "Free Online Typing Team",
-    "publishDate": "2026-01-15T14:00:00Z",
-    "lastModified": "2026-01-15T14:00:00Z",
-    "category": "Accessibility",
-    "keywords": [
-        "one-handed",
-        "accessibility",
-        "half-qwerty",
-        "frogpad"
-    ],
-    "ogImage": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200&h=630&fit=crop&crop=center",
-    "readingTime": 5,
-    "content": "<h2>Why One-Handed?</h2><p>Injury, disability, or simply holding a coffee/phone in the other hand.</p><h2>Mirroring</h2><p>A common technique is to mirror the keyboard layout. When you hold space, the left hand keys act as the right hand keys (e.g., F becomes J).</p>"
+  "id": "one-handed-typing",
+  "slug": "guide-to-one-handed-typing",
+  "title": "Mastering One-Handed Typing: Techniques and Layouts",
+  "description": "Whether for accessibility or multitasking, one-handed typing is a useful skill. Learn about half-QWERTY and other layouts.",
+  "author": "Free Online Typing Team",
+  "publishDate": "2026-01-15T14:00:00Z",
+  "lastModified": "2026-01-15T14:00:00Z",
+  "category": "Accessibility",
+  "keywords": [
+    "one-handed",
+    "accessibility",
+    "half-qwerty",
+    "frogpad"
+  ],
+  "ogImage": "/images/blog/one-handed-typing.png",
+  "readingTime": 5,
+  "content": "<h2>Why One-Handed?</h2><p>Injury, disability, or simply holding a coffee/phone in the other hand.</p><h2>Mirroring</h2><p>A common technique is to mirror the keyboard layout. When you hold space, the left hand keys act as the right hand keys (e.g., F becomes J).</p>",
+  "heroImage": "/images/blog/one-handed-typing.png"
 }

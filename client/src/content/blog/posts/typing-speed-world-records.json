@@ -1,19 +1,20 @@
 {
-    "id": "typing-speed-world-records",
-    "slug": "insane-typing-world-records",
-    "title": "The Fastest Typists Alive: World Records That Will Blow Your Mind",
-    "description": "Who is the fastest typist in the world? Discover the incredible records set by speed typists and the techniques they use.",
-    "author": "Free Online Typing Team",
-    "publishDate": "2026-01-09T12:00:00Z",
-    "lastModified": "2026-01-09T12:00:00Z",
-    "category": "Fun & Trivia",
-    "keywords": [
-        "world record",
-        "fastest typist",
-        "WPM",
-        "Barbara Blackburn"
-    ],
-    "ogImage": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=1200&h=630&fit=crop&crop=center",
-    "readingTime": 4,
-    "content": "<h2>The Guinness Record</h2><p>Barbara Blackburn held the record for years with a peak of 212 WPM using a Dvorak keyboard.</p><h2>Modern Champions</h2><p>Online competitive typists like 'sean wrona' and 'mythicalrocket' have hit speeds over 250 WPM in short bursts.</p><h2>How Do They Do It?</h2><p>Perfect muscle memory, high refresh rate monitors, and mechanical keyboards with light switches (like Cherry MX Reds or Speed Silvers).</p>"
+  "id": "typing-speed-world-records",
+  "slug": "insane-typing-world-records",
+  "title": "The Fastest Typists Alive: World Records That Will Blow Your Mind",
+  "description": "Who is the fastest typist in the world? Discover the incredible records set by speed typists and the techniques they use.",
+  "author": "Free Online Typing Team",
+  "publishDate": "2026-01-09T12:00:00Z",
+  "lastModified": "2026-01-09T12:00:00Z",
+  "category": "Fun & Trivia",
+  "keywords": [
+    "world record",
+    "fastest typist",
+    "WPM",
+    "Barbara Blackburn"
+  ],
+  "ogImage": "/images/blog/typing-speed-world-records.png",
+  "readingTime": 4,
+  "content": "<h2>The Guinness Record</h2><p>Barbara Blackburn held the record for years with a peak of 212 WPM using a Dvorak keyboard.</p><h2>Modern Champions</h2><p>Online competitive typists like 'sean wrona' and 'mythicalrocket' have hit speeds over 250 WPM in short bursts.</p><h2>How Do They Do It?</h2><p>Perfect muscle memory, high refresh rate monitors, and mechanical keyboards with light switches (like Cherry MX Reds or Speed Silvers).</p>",
+  "heroImage": "/images/blog/typing-speed-world-records.png"
 }

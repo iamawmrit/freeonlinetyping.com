@@ -1,19 +1,20 @@
 {
-    "id": "speed-coding-productivity",
-    "slug": "does-typing-speed-matter-for-coding",
-    "title": "Does Typing Speed Actually Matter for Programmers?",
-    "description": "Coding is mostly thinking, right? We explore why typing speed is still a crucial factor for developer productivity.",
-    "author": "Free Online Typing Team",
-    "publishDate": "2026-01-23T10:00:00Z",
-    "lastModified": "2026-01-23T10:00:00Z",
-    "category": "Programming",
-    "keywords": [
-        "coding",
-        "productivity",
-        "developer skills",
-        "flow state"
-    ],
-    "ogImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=630&fit=crop&crop=center",
-    "readingTime": 6,
-    "content": "<h2>The Bottleneck Argument</h2><p>While we spend time thinking, when the solution comes, we want to implement it before we lose the train of thought.</p><h2>Flow State</h2><p>Slow typing breaks flow. Being able to type code as fast as you think it keeps you in the zone.</p><h2>RSI Reduction</h2><p>Faster typists usually have better technique, leading to less strain over a career.</p>"
+  "id": "speed-coding-productivity",
+  "slug": "does-typing-speed-matter-for-coding",
+  "title": "Does Typing Speed Actually Matter for Programmers?",
+  "description": "Coding is mostly thinking, right? We explore why typing speed is still a crucial factor for developer productivity.",
+  "author": "Free Online Typing Team",
+  "publishDate": "2026-01-23T10:00:00Z",
+  "lastModified": "2026-01-23T10:00:00Z",
+  "category": "Programming",
+  "keywords": [
+    "coding",
+    "productivity",
+    "developer skills",
+    "flow state"
+  ],
+  "ogImage": "/images/blog/speed-coding-productivity.png",
+  "readingTime": 6,
+  "content": "<h2>The Bottleneck Argument</h2><p>While we spend time thinking, when the solution comes, we want to implement it before we lose the train of thought.</p><h2>Flow State</h2><p>Slow typing breaks flow. Being able to type code as fast as you think it keeps you in the zone.</p><h2>RSI Reduction</h2><p>Faster typists usually have better technique, leading to less strain over a career.</p>",
+  "heroImage": "/images/blog/speed-coding-productivity.png"
 }

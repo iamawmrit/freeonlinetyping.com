@@ -1,21 +1,22 @@
 {
-    "id": "words-per-minute-explained",
-    "slug": "words-per-minute-explained",
-    "title": "What is Words Per Minute (WPM)? The Complete Explanation",
-    "description": "Demystifying Words Per Minute (WPM). The history, the math, and why it remains the gold standard for measuring typing proficiency.",
-    "author": "Free Online Typing Team",
-    "publishDate": "2026-01-04T12:00:00Z",
-    "lastModified": "2026-01-04T12:00:00Z",
-    "category": "Education",
-    "keywords": [
-        "words per minute",
-        "wpm meaning",
-        "average wpm",
-        "typing speed measurement",
-        "what is wpm",
-        "wpm calculation"
-    ],
-    "ogImage": "https://freeonlinetyping.com/images/blog/wpm-explained.png",
-    "readingTime": 7,
-    "content": "<h2>The Standard of Speed</h2><p><strong>Words Per Minute</strong>, commonly abbreviated as WPM, is the universal metric for typing speed. But what exactly constitutes a 'word'? In the context of typing, a word isn't just any dictionary entry. For standardization, <strong>1 Word = 5 Characters</strong> (including spaces and punctuation).</p><h2>Why this Standardization Matters</h2><p>Imagine if you typed \"a\" ten times versus \"encyclopedia\" ten times. Measuring by raw word count would be unfair. By standardizing a word to 5 keystrokes, a <strong>words per minute typing test</strong> ensures fairness regardless of the text complexity. This allows for accurate comparisons between a <strong>wpm speed test</strong> taken on simple text versus technical documents.</p><h2>The Math Behind the Metric</h2><p>To calculate WPM manually:</p><ol><li>Count total characters typed.</li><li>Divide by 5 to get the 'word' count.</li><li>Divide by the time taken in minutes.</li></ol><p>For example, if you typed 250 characters in 1 minute:</p><p>250 / 5 = 50 WPM.</p><h2>WPM vs. CPM (Characters Per Minute)</h2><p>While WPM is standard in the US and UK, some regions use CPM. The conversion is roughly <strong>WPM x 5 = CPM</strong>. If you see a job requirement for 10,000 KPH (Keystrokes Per Hour), that's roughly 33-35 WPM.</p><h2>Historical Context</h2><p>The concept of WPM dates back to the days of mechanical typewriters. It was used to measure secretary efficiency. Today, in the digital era, <strong>online typing speed test wpm</strong> tools are far more precise, measuring down to the millisecond between keystrokes.</p><h2>Improving Your WPM</h2><p>Understanding the metric is the first step. Now, put it into practice. Use our <strong>words per minute online</strong> tool to benchmask yourself. Focus on fluid motion and <a href='/blog/touch-typing-guide'>touch typing</a> to see your numbers climb!</p>"
+  "id": "words-per-minute-explained",
+  "slug": "words-per-minute-explained",
+  "title": "What is Words Per Minute (WPM)? The Complete Explanation",
+  "description": "Demystifying Words Per Minute (WPM). The history, the math, and why it remains the gold standard for measuring typing proficiency.",
+  "author": "Free Online Typing Team",
+  "publishDate": "2026-01-04T12:00:00Z",
+  "lastModified": "2026-01-04T12:00:00Z",
+  "category": "Education",
+  "keywords": [
+    "words per minute",
+    "wpm meaning",
+    "average wpm",
+    "typing speed measurement",
+    "what is wpm",
+    "wpm calculation"
+  ],
+  "ogImage": "/images/blog/words-per-minute-explained.png",
+  "readingTime": 7,
+  "content": "<h2>The Standard of Speed</h2><p><strong>Words Per Minute</strong>, commonly abbreviated as WPM, is the universal metric for typing speed. But what exactly constitutes a 'word'? In the context of typing, a word isn't just any dictionary entry. For standardization, <strong>1 Word = 5 Characters</strong> (including spaces and punctuation).</p><h2>Why this Standardization Matters</h2><p>Imagine if you typed \"a\" ten times versus \"encyclopedia\" ten times. Measuring by raw word count would be unfair. By standardizing a word to 5 keystrokes, a <strong>words per minute typing test</strong> ensures fairness regardless of the text complexity. This allows for accurate comparisons between a <strong>wpm speed test</strong> taken on simple text versus technical documents.</p><h2>The Math Behind the Metric</h2><p>To calculate WPM manually:</p><ol><li>Count total characters typed.</li><li>Divide by 5 to get the 'word' count.</li><li>Divide by the time taken in minutes.</li></ol><p>For example, if you typed 250 characters in 1 minute:</p><p>250 / 5 = 50 WPM.</p><h2>WPM vs. CPM (Characters Per Minute)</h2><p>While WPM is standard in the US and UK, some regions use CPM. The conversion is roughly <strong>WPM x 5 = CPM</strong>. If you see a job requirement for 10,000 KPH (Keystrokes Per Hour), that's roughly 33-35 WPM.</p><h2>Historical Context</h2><p>The concept of WPM dates back to the days of mechanical typewriters. It was used to measure secretary efficiency. Today, in the digital era, <strong>online typing speed test wpm</strong> tools are far more precise, measuring down to the millisecond between keystrokes.</p><h2>Improving Your WPM</h2><p>Understanding the metric is the first step. Now, put it into practice. Use our <strong>words per minute online</strong> tool to benchmask yourself. Focus on fluid motion and <a href='/blog/touch-typing-guide'>touch typing</a> to see your numbers climb!</p>",
+  "heroImage": "/images/blog/words-per-minute-explained.png"
 }

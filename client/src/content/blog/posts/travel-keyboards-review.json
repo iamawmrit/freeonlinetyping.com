@@ -1,19 +1,20 @@
 {
-    "id": "travel-keyboards-review",
-    "slug": "best-portable-travel-keyboards",
-    "title": "Digital Nomad Gear: Best Portable Keyboards for Travel",
-    "description": "Typing on the go? We review compact, foldable, and wireless keyboards that fit in your backpack.",
-    "author": "Free Online Typing Team",
-    "publishDate": "2026-01-30T11:00:00Z",
-    "lastModified": "2026-01-30T11:00:00Z",
-    "category": "Gear & Equipment",
-    "keywords": [
-        "travel",
-        "portable",
-        "bluetooth",
-        "60% keyboard"
-    ],
-    "ogImage": "https://images.unsplash.com/photo-1587831990711-23ca6441447b?w=1200&h=630&fit=crop&crop=center",
-    "readingTime": 6,
-    "content": "<h2>Form Factors</h2><p>60% or 65% layouts are the sweet spot. They remove the number pad and F-row but keep the essentials.</p><h2>Low Profile</h2><p>Keyboards like the NuPhy Air75 are thin and light, perfect for sliding into a tablet sleeve.</p>"
+  "id": "travel-keyboards-review",
+  "slug": "best-portable-travel-keyboards",
+  "title": "Digital Nomad Gear: Best Portable Keyboards for Travel",
+  "description": "Typing on the go? We review compact, foldable, and wireless keyboards that fit in your backpack.",
+  "author": "Free Online Typing Team",
+  "publishDate": "2026-01-30T11:00:00Z",
+  "lastModified": "2026-01-30T11:00:00Z",
+  "category": "Gear & Equipment",
+  "keywords": [
+    "travel",
+    "portable",
+    "bluetooth",
+    "60% keyboard"
+  ],
+  "ogImage": "/images/blog/travel-keyboards-review.png",
+  "readingTime": 6,
+  "content": "<h2>Form Factors</h2><p>60% or 65% layouts are the sweet spot. They remove the number pad and F-row but keep the essentials.</p><h2>Low Profile</h2><p>Keyboards like the NuPhy Air75 are thin and light, perfect for sliding into a tablet sleeve.</p>",
+  "heroImage": "/images/blog/travel-keyboards-review.png"
 }

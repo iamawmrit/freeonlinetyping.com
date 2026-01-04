@@ -1,21 +1,22 @@
 {
-    "id": "understanding-key-switches",
-    "slug": "guide-to-mechanical-switches",
-    "title": "Blue, Red, Brown? Understanding Mechanical Key Switches",
-    "description": "Confused by switch colors? We break down the three main types of mechanical switches and who they are for.",
-    "author": "Free Online Typing Team",
-    "publishDate": "2026-01-21T09:00:00Z",
-    "lastModified": "2026-01-21T09:00:00Z",
-    "category": "Gear & Equipment",
-    "keywords": [
-        "switches",
-        "cherry mx",
-        "gateron",
-        "linear",
-        "tactile",
-        "clicky"
-    ],
-    "ogImage": "https://images.unsplash.com/photo-1595044426077-d36d9236d54a?w=1200&h=630&fit=crop&crop=center",
-    "readingTime": 5,
-    "content": "<h2>Linear (Red, Black, Yellow)</h2><p>Smooth travel, no bump. Preferred by gamers for consistency.</p><h2>Tactile (Brown, Clear, Holy Panda)</h2><p>A bump halfway down to feel the actuation. Preferred by typists.</p><h2>Clicky (Blue, Green)</h2><p>Tactile bump plus a loud click sound. Loved by some, hated by coworkers.</p>"
+  "id": "understanding-key-switches",
+  "slug": "guide-to-mechanical-switches",
+  "title": "Blue, Red, Brown? Understanding Mechanical Key Switches",
+  "description": "Confused by switch colors? We break down the three main types of mechanical switches and who they are for.",
+  "author": "Free Online Typing Team",
+  "publishDate": "2026-01-21T09:00:00Z",
+  "lastModified": "2026-01-21T09:00:00Z",
+  "category": "Gear & Equipment",
+  "keywords": [
+    "switches",
+    "cherry mx",
+    "gateron",
+    "linear",
+    "tactile",
+    "clicky"
+  ],
+  "ogImage": "/images/blog/understanding-key-switches.png",
+  "readingTime": 5,
+  "content": "<h2>Linear (Red, Black, Yellow)</h2><p>Smooth travel, no bump. Preferred by gamers for consistency.</p><h2>Tactile (Brown, Clear, Holy Panda)</h2><p>A bump halfway down to feel the actuation. Preferred by typists.</p><h2>Clicky (Blue, Green)</h2><p>Tactile bump plus a loud click sound. Loved by some, hated by coworkers.</p>",
+  "heroImage": "/images/blog/understanding-key-switches.png"
 }

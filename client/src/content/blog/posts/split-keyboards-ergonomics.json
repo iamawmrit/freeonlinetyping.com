@@ -1,19 +1,20 @@
 {
-    "id": "split-keyboards-ergonomics",
-    "slug": "benefits-of-split-keyboards",
-    "title": "Split Keyboards: The Weird Looking Solution to Shoulder Pain",
-    "description": "Separating the keyboard halves allows you to open your chest and straighten your wrists. Is it time to switch?",
-    "author": "Free Online Typing Team",
-    "publishDate": "2026-02-01T09:00:00Z",
-    "lastModified": "2026-02-01T09:00:00Z",
-    "category": "Health & Ergonomics",
-    "keywords": [
-        "split keyboard",
-        "ergonomics",
-        "shoulder pain",
-        "ulnar deviation"
-    ],
-    "ogImage": "https://images.unsplash.com/photo-1587831990711-23ca6441447b?w=1200&h=630&fit=crop&crop=center",
-    "readingTime": 6,
-    "content": "<h2>Ulnar Deviation</h2><p>On a normal keyboard, your hands bend outwards at the wrist. This is bad.</p><h2>Pronation</h2><p>Your hands are flat. Split keyboards can be 'tented' (tilted) to a more natural handshake position.</p><h2>Recommendation</h2><p>Kinesis Freestyle or Dygma Raise are great entry points.</p>"
+  "id": "split-keyboards-ergonomics",
+  "slug": "benefits-of-split-keyboards",
+  "title": "Split Keyboards: The Weird Looking Solution to Shoulder Pain",
+  "description": "Separating the keyboard halves allows you to open your chest and straighten your wrists. Is it time to switch?",
+  "author": "Free Online Typing Team",
+  "publishDate": "2026-02-01T09:00:00Z",
+  "lastModified": "2026-02-01T09:00:00Z",
+  "category": "Health & Ergonomics",
+  "keywords": [
+    "split keyboard",
+    "ergonomics",
+    "shoulder pain",
+    "ulnar deviation"
+  ],
+  "ogImage": "/images/blog/split-keyboards-ergonomics.png",
+  "readingTime": 6,
+  "content": "<h2>Ulnar Deviation</h2><p>On a normal keyboard, your hands bend outwards at the wrist. This is bad.</p><h2>Pronation</h2><p>Your hands are flat. Split keyboards can be 'tented' (tilted) to a more natural handshake position.</p><h2>Recommendation</h2><p>Kinesis Freestyle or Dygma Raise are great entry points.</p>",
+  "heroImage": "/images/blog/split-keyboards-ergonomics.png"
 }

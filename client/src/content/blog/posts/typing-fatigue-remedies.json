@@ -1,19 +1,20 @@
 {
-    "id": "typing-fatigue-remedies",
-    "slug": "combat-typing-fatigue",
-    "title": "5 Quick Remedies for Typing Fatigue",
-    "description": "Hands feeling heavy? Fingers stiff? Here are 5 quick ways to refresh your hands and get back to peak performance.",
-    "author": "Free Online Typing Team",
-    "publishDate": "2026-01-18T13:00:00Z",
-    "lastModified": "2026-01-18T13:00:00Z",
-    "category": "Health & Ergonomics",
-    "keywords": [
-        "fatigue",
-        "hand health",
-        "massage",
-        "warm up"
-    ],
-    "ogImage": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&h=630&fit=crop&crop=center",
-    "readingTime": 3,
-    "content": "<h2>1. Warm Water Soak</h2><p>Increases blood flow and relaxes muscles.</p><h2>2. Contrast Bath</h2><p>Switch between hot and cold water to stimulate circulation.</p><h2>3. Massage</h2><p>Massage the forearm muscles, not just the wrist.</p><h2>4. Shake It Out</h2><p>Gently shake your hands to release tension.</p><h2>5. Hydrate</h2><p>Muscles need water to function properly.</p>"
+  "id": "typing-fatigue-remedies",
+  "slug": "combat-typing-fatigue",
+  "title": "5 Quick Remedies for Typing Fatigue",
+  "description": "Hands feeling heavy? Fingers stiff? Here are 5 quick ways to refresh your hands and get back to peak performance.",
+  "author": "Free Online Typing Team",
+  "publishDate": "2026-01-18T13:00:00Z",
+  "lastModified": "2026-01-18T13:00:00Z",
+  "category": "Health & Ergonomics",
+  "keywords": [
+    "fatigue",
+    "hand health",
+    "massage",
+    "warm up"
+  ],
+  "ogImage": "/images/blog/typing-fatigue-remedies.png",
+  "readingTime": 3,
+  "content": "<h2>1. Warm Water Soak</h2><p>Increases blood flow and relaxes muscles.</p><h2>2. Contrast Bath</h2><p>Switch between hot and cold water to stimulate circulation.</p><h2>3. Massage</h2><p>Massage the forearm muscles, not just the wrist.</p><h2>4. Shake It Out</h2><p>Gently shake your hands to release tension.</p><h2>5. Hydrate</h2><p>Muscles need water to function properly.</p>",
+  "heroImage": "/images/blog/typing-fatigue-remedies.png"
 }

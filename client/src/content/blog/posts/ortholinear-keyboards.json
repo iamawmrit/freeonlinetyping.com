@@ -1,19 +1,20 @@
 {
-    "id": "ortholinear-keyboards",
-    "slug": "what-is-ortholinear-keyboard",
-    "title": "Why Your Keys Are Staggered (And Why Ortholinear Might Be Better)",
-    "description": "Standard keyboards are staggered because of typewriters. Ortholinear (grid) layouts make more sense for fingers.",
-    "author": "Free Online Typing Team",
-    "publishDate": "2026-01-31T13:00:00Z",
-    "lastModified": "2026-01-31T13:00:00Z",
-    "category": "Typing Techniques",
-    "keywords": [
-        "ortholinear",
-        "planck",
-        "preonic",
-        "grid layout"
-    ],
-    "ogImage": "https://images.unsplash.com/photo-1587831990711-23ca6441447b?w=1200&h=630&fit=crop&crop=center",
-    "readingTime": 7,
-    "content": "<h2>The Stagger</h2><p>Look at your keyboard. The Q is not directly above the A. This is a relic of mechanical linkages.</p><h2>The Grid</h2><p>Ortholinear keyboards align keys in straight columns. This reduces lateral finger movement and can be more ergonomic once learned.</p><h2>Popular Models</h2><p>Planck (40%) and Preonic (50%).</p>"
+  "id": "ortholinear-keyboards",
+  "slug": "what-is-ortholinear-keyboard",
+  "title": "Why Your Keys Are Staggered (And Why Ortholinear Might Be Better)",
+  "description": "Standard keyboards are staggered because of typewriters. Ortholinear (grid) layouts make more sense for fingers.",
+  "author": "Free Online Typing Team",
+  "publishDate": "2026-01-31T13:00:00Z",
+  "lastModified": "2026-01-31T13:00:00Z",
+  "category": "Typing Techniques",
+  "keywords": [
+    "ortholinear",
+    "planck",
+    "preonic",
+    "grid layout"
+  ],
+  "ogImage": "/images/blog/ortholinear-keyboards.png",
+  "readingTime": 7,
+  "content": "<h2>The Stagger</h2><p>Look at your keyboard. The Q is not directly above the A. This is a relic of mechanical linkages.</p><h2>The Grid</h2><p>Ortholinear keyboards align keys in straight columns. This reduces lateral finger movement and can be more ergonomic once learned.</p><h2>Popular Models</h2><p>Planck (40%) and Preonic (50%).</p>",
+  "heroImage": "/images/blog/ortholinear-keyboards.png"
 }

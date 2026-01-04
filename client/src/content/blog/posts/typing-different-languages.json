@@ -1,19 +1,20 @@
 {
-    "id": "typing-different-languages",
-    "slug": "typing-in-multiple-languages",
-    "title": "Challenges of Typing in Multiple Languages",
-    "description": "Accents, different layouts, and character sets. How to manage being a polyglot typist.",
-    "author": "Free Online Typing Team",
-    "publishDate": "2026-01-26T09:00:00Z",
-    "lastModified": "2026-01-26T09:00:00Z",
-    "category": "Languages",
-    "keywords": [
-        "languages",
-        "polyglot",
-        "accents",
-        "ISO layout"
-    ],
-    "ogImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop&crop=center",
-    "readingTime": 6,
-    "content": "<h2>Layout Switching</h2><p>Using OS shortcuts (Win+Space, Cmd+Space) to toggle layouts.</p><h2>The US-International Layout</h2><p>A hidden gem. Allows typing accents (é, ñ, ü) using the standard US layout with 'dead keys'. Highly recommended for occasional foreign language typing.</p>"
+  "id": "typing-different-languages",
+  "slug": "typing-in-multiple-languages",
+  "title": "Challenges of Typing in Multiple Languages",
+  "description": "Accents, different layouts, and character sets. How to manage being a polyglot typist.",
+  "author": "Free Online Typing Team",
+  "publishDate": "2026-01-26T09:00:00Z",
+  "lastModified": "2026-01-26T09:00:00Z",
+  "category": "Languages",
+  "keywords": [
+    "languages",
+    "polyglot",
+    "accents",
+    "ISO layout"
+  ],
+  "ogImage": "/images/blog/typing-different-languages.png",
+  "readingTime": 6,
+  "content": "<h2>Layout Switching</h2><p>Using OS shortcuts (Win+Space, Cmd+Space) to toggle layouts.</p><h2>The US-International Layout</h2><p>A hidden gem. Allows typing accents (\u00e9, \u00f1, \u00fc) using the standard US layout with 'dead keys'. Highly recommended for occasional foreign language typing.</p>",
+  "heroImage": "/images/blog/typing-different-languages.png"
 }

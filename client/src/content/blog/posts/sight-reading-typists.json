@@ -1,19 +1,20 @@
 {
-    "id": "sight-reading-typists",
-    "slug": "sight-reading-techniques",
-    "title": "Sight Reading: The Secret Skill of Fast Typists",
-    "description": "Learn to read ahead of what you are typing to maintain a continuous flow and eliminate pauses.",
-    "author": "Free Online Typing Team",
-    "publishDate": "2026-01-25T14:00:00Z",
-    "lastModified": "2026-01-25T14:00:00Z",
-    "category": "Advanced Typing",
-    "keywords": [
-        "sight reading",
-        "flow",
-        "reading ahead",
-        "buffer"
-    ],
-    "ogImage": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200&h=630&fit=crop&crop=center",
-    "readingTime": 5,
-    "content": "<h2>The Buffer</h2><p>Fast typists read 1-2 seconds ahead of their fingers. This buffer allows the brain to process difficult words before the fingers reach them.</p><h2>How to Train It</h2><p>Practice typing while forcing your eyes to scan the next line. Don't look at the word you are currently typing.</p>"
+  "id": "sight-reading-typists",
+  "slug": "sight-reading-techniques",
+  "title": "Sight Reading: The Secret Skill of Fast Typists",
+  "description": "Learn to read ahead of what you are typing to maintain a continuous flow and eliminate pauses.",
+  "author": "Free Online Typing Team",
+  "publishDate": "2026-01-25T14:00:00Z",
+  "lastModified": "2026-01-25T14:00:00Z",
+  "category": "Advanced Typing",
+  "keywords": [
+    "sight reading",
+    "flow",
+    "reading ahead",
+    "buffer"
+  ],
+  "ogImage": "/images/blog/sight-reading-typists.png",
+  "readingTime": 5,
+  "content": "<h2>The Buffer</h2><p>Fast typists read 1-2 seconds ahead of their fingers. This buffer allows the brain to process difficult words before the fingers reach them.</p><h2>How to Train It</h2><p>Practice typing while forcing your eyes to scan the next line. Don't look at the word you are currently typing.</p>",
+  "heroImage": "/images/blog/sight-reading-typists.png"
 }

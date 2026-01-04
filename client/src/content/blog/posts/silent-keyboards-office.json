@@ -1,19 +1,20 @@
 {
-    "id": "silent-keyboards-office",
-    "slug": "best-silent-keyboards-for-office",
-    "title": "The Best Silent Keyboards for Open Offices",
-    "description": "Don't be 'that guy' with the loud clicky keyboard. Here are the best silent options that still feel great.",
-    "author": "Free Online Typing Team",
-    "publishDate": "2026-01-29T10:00:00Z",
-    "lastModified": "2026-01-29T10:00:00Z",
-    "category": "Gear & Equipment",
-    "keywords": [
-        "silent keyboard",
-        "office",
-        "quiet",
-        "dampened switches"
-    ],
-    "ogImage": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=1200&h=630&fit=crop&crop=center",
-    "readingTime": 5,
-    "content": "<h2>Silent Switches</h2><p>Look for 'Silent Red' or 'Silent Brown' switches. They have internal rubber dampeners.</p><h2>O-Rings</h2><p>A cheap mod. Place small rubber rings on keycap stems to dampen the bottom-out sound.</p><h2>Top Pick</h2><p>Logitech MX Keys S (Membrane) or Keychron K Pro with Silent Red switches.</p>"
+  "id": "silent-keyboards-office",
+  "slug": "best-silent-keyboards-for-office",
+  "title": "The Best Silent Keyboards for Open Offices",
+  "description": "Don't be 'that guy' with the loud clicky keyboard. Here are the best silent options that still feel great.",
+  "author": "Free Online Typing Team",
+  "publishDate": "2026-01-29T10:00:00Z",
+  "lastModified": "2026-01-29T10:00:00Z",
+  "category": "Gear & Equipment",
+  "keywords": [
+    "silent keyboard",
+    "office",
+    "quiet",
+    "dampened switches"
+  ],
+  "ogImage": "/images/blog/silent-keyboards-office.png",
+  "readingTime": 5,
+  "content": "<h2>Silent Switches</h2><p>Look for 'Silent Red' or 'Silent Brown' switches. They have internal rubber dampeners.</p><h2>O-Rings</h2><p>A cheap mod. Place small rubber rings on keycap stems to dampen the bottom-out sound.</p><h2>Top Pick</h2><p>Logitech MX Keys S (Membrane) or Keychron K Pro with Silent Red switches.</p>",
+  "heroImage": "/images/blog/silent-keyboards-office.png"
 }
