@@ -1,0 +1,12 @@
+# Netlify Redirects and Headers Configuration
+# This file should be placed in the public folder
+
+# Force HTTPS redirect
+http://freeonlinetyping.com/*   https://freeonlinetyping.com/:splat   301!
+http://www.freeonlinetyping.com/*   https://www.freeonlinetyping.com/:splat   301!
+
+# Redirect www to non-www (canonical)
+https://www.freeonlinetyping.com/*   https://freeonlinetyping.com/:splat   301!
+
+# Force trailing slash removal (optional, for clean URLs)
+https://freeonlinetyping.com/*/   https://freeonlinetyping.com/:splat   301!

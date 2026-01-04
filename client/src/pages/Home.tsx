@@ -45,11 +45,7 @@ export default function Home({ preset, heading, subheading }: HomeProps) {
 
   return (
     <div className="min-h-screen flex flex-col relative overflow-hidden">
-      <Helmet>
-        <title>Free Typing Test - Check Your WPM Speed | freeonlinetyping.com</title>
-        <meta name="description" content="Free online typing test to check your typing speed (WPM) and accuracy. Multiple test modes (1 min, 5 min), real-time stats, no sign-up required. Start improving your typing skills today!" />
-        <link rel="canonical" href="https://freeonlinetyping.com/" />
-      </Helmet>
+      {/* Meta tags are in index.html for home page */}
 
       {/* Background Overlay for Scanlines */}
       <div className="fixed inset-0 pointer-events-none z-50 opacity-10 scanlines" aria-hidden="true" />

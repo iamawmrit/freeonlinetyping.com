@@ -1,0 +1,39 @@
+# HTTP Headers Configuration for Netlify
+# This file should be placed in the public folder
+
+# Apply to all paths
+/*
+  # Security Headers
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  
+  # Charset encoding in HTTP header
+  Content-Type: text/html; charset=UTF-8
+  
+  # Cache Control
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML pages - shorter cache
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Type: text/html; charset=UTF-8
+
+# Root index
+/
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Type: text/html; charset=UTF-8
+
+# API routes (if any)
+/api/*
+  Cache-Control: no-cache, no-store, must-revalidate
+  Content-Type: application/json; charset=UTF-8
+
+# Static assets
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
