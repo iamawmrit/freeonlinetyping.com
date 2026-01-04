@@ -1,4 +1,7 @@
 import improvingTypingSpeed from './improve-typing-speed-10-tips.json';
+import wpmTypingTestGuide from './wpm-typing-test-guide.json';
+import checkTypingSpeed from './check-typing-speed.json';
+import wordsPerMinuteExplained from './words-per-minute-explained.json';
 import touchTypingGuide from './touch-typing-guide.json';
 import mechanicalVsMembrane from './mechanical-vs-membrane.json';
 import ergonomicWorkspace from './ergonomic-workspace-setup.json';
@@ -32,6 +35,9 @@ import ortholinearKeyboards from './ortholinear-keyboards.json';
 import splitKeyboardsErgonomics from './split-keyboards-ergonomics.json';
 
 const blogPosts = [
+    wpmTypingTestGuide,
+    checkTypingSpeed,
+    wordsPerMinuteExplained,
     improvingTypingSpeed,
     touchTypingGuide,
     mechanicalVsMembrane,

@@ -1,8 +1,9 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'wouter';
 import { useEffect } from 'react';
-import { Clock, Target, Zap, Baby, GraduationCap, Briefcase, Smile, Timer } from 'lucide-react';
+import { Clock, Target, Zap, Baby, GraduationCap, Briefcase, Smile, Timer, FileText } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Header } from '@/components/Header';
 
 interface TypingMode {
     title: string;
@@ -111,144 +112,147 @@ export default function TypingModes() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-background">
-            <Helmet>
-                <title>Typing Modes - Choose Your Test | Free Online Typing</title>
-                <meta
-                    name="description"
-                    content="Choose from 11 typing test modes including 15-second, 1-minute, 5-minute, speed tests, accuracy tests, and more. Find the perfect typing test for your skill level."
-                />
-                <meta
-                    name="keywords"
-                    content="typing modes, typing tests, WPM test, typing speed test, accuracy test, beginner typing, professional typing, 1 minute test, 5 minute test, 10 minute test"
-                />
-                <link rel="canonical" href="https://freeonlinetyping.com/typing-modes" />
+        <>
+            <Header />
+            <div className="min-h-screen bg-background">
+                <Helmet>
+                    <title>Typing Modes - Choose Your Test | Free Online Typing</title>
+                    <meta
+                        name="description"
+                        content="Choose from 11 typing test modes including 15-second, 1-minute, 5-minute, speed tests, accuracy tests, and more. Find the perfect typing test for your skill level."
+                    />
+                    <meta
+                        name="keywords"
+                        content="typing modes, typing tests, WPM test, typing speed test, accuracy test, beginner typing, professional typing, 1 minute test, 5 minute test, 10 minute test"
+                    />
+                    <link rel="canonical" href="https://freeonlinetyping.com/typing-modes" />
 
-                {/* Open Graph */}
-                <meta property="og:title" content="Typing Test Modes | Free Online Typing" />
-                <meta property="og:description" content="Choose from 11 typing test modes for different skill levels and goals. Free typing tests with no sign-up required." />
-                <meta property="og:url" content="https://freeonlinetyping.com/typing-modes" />
-                <meta property="og:type" content="website" />
+                    {/* Open Graph */}
+                    <meta property="og:title" content="Typing Test Modes | Free Online Typing" />
+                    <meta property="og:description" content="Choose from 11 typing test modes for different skill levels and goals. Free typing tests with no sign-up required." />
+                    <meta property="og:url" content="https://freeonlinetyping.com/typing-modes" />
+                    <meta property="og:type" content="website" />
 
-                {/* Structured Data */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        '@context': 'https://schema.org',
-                        '@type': 'CollectionPage',
-                        name: 'Typing Test Modes',
-                        description: 'Collection of typing test modes for all skill levels',
-                        url: 'https://freeonlinetyping.com/typing-modes',
-                        breadcrumb: {
-                            '@type': 'BreadcrumbList',
-                            itemListElement: [{
-                                '@type': 'ListItem',
-                                position: 1,
-                                name: 'Home',
-                                item: 'https://freeonlinetyping.com'
-                            }, {
-                                '@type': 'ListItem',
-                                position: 2,
-                                name: 'Typing Modes',
-                                item: 'https://freeonlinetyping.com/typing-modes'
-                            }]
-                        }
-                    })}
-                </script>
-            </Helmet>
+                    {/* Structured Data */}
+                    <script type="application/ld+json">
+                        {JSON.stringify({
+                            '@context': 'https://schema.org',
+                            '@type': 'CollectionPage',
+                            name: 'Typing Test Modes',
+                            description: 'Collection of typing test modes for all skill levels',
+                            url: 'https://freeonlinetyping.com/typing-modes',
+                            breadcrumb: {
+                                '@type': 'BreadcrumbList',
+                                itemListElement: [{
+                                    '@type': 'ListItem',
+                                    position: 1,
+                                    name: 'Home',
+                                    item: 'https://freeonlinetyping.com'
+                                }, {
+                                    '@type': 'ListItem',
+                                    position: 2,
+                                    name: 'Typing Modes',
+                                    item: 'https://freeonlinetyping.com/typing-modes'
+                                }]
+                            }
+                        })}
+                    </script>
+                </Helmet>
 
-            <div className="w-full max-w-7xl mx-auto px-4 py-12">
-                {/* Header */}
-                <div className="text-center mb-12">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-                        Typing Test Modes
-                    </h1>
-                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Choose from a variety of typing tests designed for different skill levels and goals
-                    </p>
-                </div>
+                <div className="w-full max-w-7xl mx-auto px-4 py-12">
+                    {/* Header */}
+                    <div className="text-center mb-12">
+                        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+                            Typing Test Modes
+                        </h1>
+                        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                            Choose from a variety of typing tests designed for different skill levels and goals
+                        </p>
+                    </div>
 
-                {/* Typing Modes Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-                    {typingModes.map((mode) => (
-                        <Link key={mode.href} href={mode.href}>
-                            <Card className="h-full hover:border-primary/50 transition-all hover:shadow-lg cursor-pointer group">
-                                <CardHeader>
-                                    <div className="flex items-start justify-between mb-3">
-                                        <div className="p-3 bg-primary/10 rounded-lg text-primary group-hover:bg-primary/20 transition-colors">
-                                            {mode.icon}
+                    {/* Typing Modes Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                        {typingModes.map((mode) => (
+                            <Link key={mode.href} href={mode.href}>
+                                <Card className="h-full hover:border-primary/50 transition-all hover:shadow-lg cursor-pointer group">
+                                    <CardHeader>
+                                        <div className="flex items-start justify-between mb-3">
+                                            <div className="p-3 bg-primary/10 rounded-lg text-primary group-hover:bg-primary/20 transition-colors">
+                                                {mode.icon}
+                                            </div>
+                                            <div className="flex gap-2">
+                                                {mode.duration && (
+                                                    <span className="text-xs px-2 py-1 bg-muted rounded-full">
+                                                        {mode.duration}
+                                                    </span>
+                                                )}
+                                                {mode.difficulty && (
+                                                    <span
+                                                        className={`text-xs px-2 py-1 rounded-full border capitalize ${difficultyColors[mode.difficulty]
+                                                            }`}
+                                                    >
+                                                        {mode.difficulty}
+                                                    </span>
+                                                )}
+                                            </div>
                                         </div>
-                                        <div className="flex gap-2">
-                                            {mode.duration && (
-                                                <span className="text-xs px-2 py-1 bg-muted rounded-full">
-                                                    {mode.duration}
-                                                </span>
-                                            )}
-                                            {mode.difficulty && (
-                                                <span
-                                                    className={`text-xs px-2 py-1 rounded-full border capitalize ${difficultyColors[mode.difficulty]
-                                                        }`}
-                                                >
-                                                    {mode.difficulty}
-                                                </span>
-                                            )}
-                                        </div>
-                                    </div>
-                                    <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                                        {mode.title}
-                                    </CardTitle>
-                                    <CardDescription className="text-sm">
-                                        {mode.description}
-                                    </CardDescription>
-                                </CardHeader>
-                            </Card>
+                                        <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                                            {mode.title}
+                                        </CardTitle>
+                                        <CardDescription className="text-sm">
+                                            {mode.description}
+                                        </CardDescription>
+                                    </CardHeader>
+                                </Card>
+                            </Link>
+                        ))}
+                    </div>
+
+                    {/* Info Section */}
+                    <div className="grid md:grid-cols-3 gap-6 mb-12">
+                        <Card className="border-border/50">
+                            <CardHeader>
+                                <CardTitle className="text-lg">Choose Your Level</CardTitle>
+                                <CardDescription>
+                                    Start with beginner tests and gradually move up to professional level as you improve
+                                </CardDescription>
+                            </CardHeader>
+                        </Card>
+                        <Card className="border-border/50">
+                            <CardHeader>
+                                <CardTitle className="text-lg">Track Progress</CardTitle>
+                                <CardDescription>
+                                    Each test mode helps you focus on different aspects of typing - speed, accuracy, or endurance
+                                </CardDescription>
+                            </CardHeader>
+                        </Card>
+                        <Card className="border-border/50">
+                            <CardHeader>
+                                <CardTitle className="text-lg">Free Forever</CardTitle>
+                                <CardDescription>
+                                    All typing test modes are completely free with no sign-up required. Practice anytime!
+                                </CardDescription>
+                            </CardHeader>
+                        </Card>
+                    </div>
+
+                    {/* CTA Section */}
+                    <div className="text-center bg-card/50 border border-border rounded-lg p-8">
+                        <h2 className="text-2xl font-bold mb-4">
+                            Not Sure Where to Start?
+                        </h2>
+                        <p className="text-muted-foreground mb-6">
+                            Try our most popular 1-minute typing test for a quick assessment
+                        </p>
+                        <Link
+                            href="/1-minute-typing-test"
+                            className="inline-block px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors"
+                        >
+                            Take 1 Minute Test
                         </Link>
-                    ))}
+                    </div>
                 </div>
-
-                {/* Info Section */}
-                <div className="grid md:grid-cols-3 gap-6 mb-12">
-                    <Card className="border-border/50">
-                        <CardHeader>
-                            <CardTitle className="text-lg">Choose Your Level</CardTitle>
-                            <CardDescription>
-                                Start with beginner tests and gradually move up to professional level as you improve
-                            </CardDescription>
-                        </CardHeader>
-                    </Card>
-                    <Card className="border-border/50">
-                        <CardHeader>
-                            <CardTitle className="text-lg">Track Progress</CardTitle>
-                            <CardDescription>
-                                Each test mode helps you focus on different aspects of typing - speed, accuracy, or endurance
-                            </CardDescription>
-                        </CardHeader>
-                    </Card>
-                    <Card className="border-border/50">
-                        <CardHeader>
-                            <CardTitle className="text-lg">Free Forever</CardTitle>
-                            <CardDescription>
-                                All typing test modes are completely free with no sign-up required. Practice anytime!
-                            </CardDescription>
-                        </CardHeader>
-                    </Card>
-                </div>
-
-                {/* CTA Section */}
-                <div className="text-center bg-card/50 border border-border rounded-lg p-8">
-                    <h2 className="text-2xl font-bold mb-4">
-                        Not Sure Where to Start?
-                    </h2>
-                    <p className="text-muted-foreground mb-6">
-                        Try our most popular 1-minute typing test for a quick assessment
-                    </p>
-                    <Link
-                        href="/1-minute-typing-test"
-                        className="inline-block px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors"
-                    >
-                        Take 1 Minute Test
-                    </Link>
-                </div>
-            </div>
-        </div >
+            </div >
+        </>
     );
 }

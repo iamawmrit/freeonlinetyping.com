@@ -1,143 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- Home Page -->
-  <url>
-    <loc>https://freeonlinetyping.com/</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <!-- Blog Main Page -->
-  <url>
-    <loc>https://freeonlinetyping.com/blog</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Blog Posts -->
-  <url>
-    <loc>https://freeonlinetyping.com/blog/improve-typing-speed-10-proven-tips</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/blog/touch-typing-complete-beginners-guide</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/blog/typing-speed-chart-wpm-benchmarks</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/blog/how-to-type-100-wpm-expert-guide</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Typing Mode Landing Pages -->
-  <url>
-    <loc>https://freeonlinetyping.com/typing-modes</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/15-second-typing-test</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/1-minute-typing-test</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/5-minute-typing-test</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/10-minute-typing-test</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/fun-typing-test</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/speed-typing-test</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/accuracy-typing-test</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/beginner-typing-test</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/advanced-typing-test</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/professional-typing-test</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/typing-test-for-kids</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/advanced-typing-test</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/professional-typing-test</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://freeonlinetyping.com/typing-test-for-kids</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<script id="eppiocemhmnlbhjplcgkofciiegomcon"/>
+<script/>
+<script/>
+<!--  Home  -->
+<url>
+<loc>https://freeonlinetyping.com/</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1.0</priority>
+</url>
+<!--  Blog  -->
+<url>
+<loc>https://freeonlinetyping.com/blog</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.9</priority>
+</url>
+<!--  Blog Posts  -->
+<url>
+<loc>https://freeonlinetyping.com/blog/wpm-typing-test-guide</loc>
+<lastmod>2026-01-04</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/blog/check-typing-speed</loc>
+<lastmod>2026-01-04</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/blog/words-per-minute-explained</loc>
+<lastmod>2026-01-04</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/blog/improve-typing-speed-10-proven-tips</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/blog/touch-typing-complete-beginners-guide</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/blog/typing-speed-chart-wpm-benchmarks</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/blog/how-to-type-100-wpm-expert-guide</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<!--  Typing Tests  -->
+<url>
+<loc>https://freeonlinetyping.com/typing-modes</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/15-second-typing-test</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/1-minute-typing-test</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/5-minute-typing-test</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/10-minute-typing-test</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/fun-typing-test</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/speed-typing-test</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/accuracy-typing-test</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/beginner-typing-test</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/advanced-typing-test</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/professional-typing-test</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://freeonlinetyping.com/typing-test-for-kids</loc>
+<lastmod>2026-01-02</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
 </urlset>
